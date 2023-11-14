@@ -69,6 +69,6 @@
         @apply text-4xl py-6 text-white font-medium transition-all ease-linear duration-300;
     }
     .contact-input{
-        @apply bg-black-main w-full text-[22px] text-center md:text-start leading-normal text-white font-bold capitalize placeholder:text-gray-400 py-3 border-b-[1px] border-red-main focus-visible:outline-none;
+        @apply bg-black-main w-full text-[22px] text-center md:text-start leading-normal text-white font-bold capitalize placeholder:text-gray-400 py-3 border-b-[1px] border-transparent border-b-red-main focus-visible:outline-none focus:outline-none focus:border-transparent focus:border-b-red-main focus:ring-0;
     }
 }

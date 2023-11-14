@@ -92,10 +92,10 @@ ScrollTrigger.refresh();
 
 
 
-
 var timeline1 = gsap.timeline();
 var timeline2 = gsap.timeline();
 var timeline3 = gsap.timeline();
+var projectsTimeline = gsap.timeline();
 
 timeline1.to('.circle-php', {
   opacity: 1,
@@ -201,6 +201,22 @@ gsap.to('.case-study-section', {
     }
   });
 
+  var projectItems = document.querySelectorAll('#allProjects .project-items .project-item');
+
+  projectItems.forEach(function(projectItem, index) {
+    projectsTimeline.from(projectItem, {
+      translateY: 60,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: projectItem,
+        scroller: 'main',
+        start: 'top 80%',
+        end: '+=10%',
+        scrub: 2,
+      },
+      delay: index * 0.5,
+    });
+  });
 
 const items = gsap.utils.toArray(".my-style-item");
 
@@ -399,5 +415,7 @@ function horizontalLoop(items, config) {
 
   // Initialize the first testimonial
   showTestimonial(currentIndex);
+
+
 
 

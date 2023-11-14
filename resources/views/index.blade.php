@@ -31,7 +31,7 @@
       </header>
     <!-- banner section start -->
     <section
-      class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('./../img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
+      class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
       data-scroll data-scroll-section>
       <div class="container px-4">
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
@@ -50,32 +50,32 @@
               <button type="button" class="btn-red mt-12 opacity-0 group">Know More <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button></a>
             <ul class="banner-social-list flex items-center justify-center md:justify-start gap-4 mt-6">
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/github.svg" alt=""></a>
+                <a href=""><img src="{{ asset('/svg/github.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/linkedin.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/linkedin.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/slack.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/slack.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/behance.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/behance.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/whatsapp.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/whatsapp.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/telegram.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/telegram.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="./../svg/skypee.svg" alt=""></a>
+                <a href=""><img src="{{ asset('svg/skypee.svg') }}" alt=""></a>
               </li>
             </ul>
           </div>
           <div class="col-span-12 order-1 md:col-span-6 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
-                <img src="./../img/nurul-anam.png" class="banner-avater opacity-0" alt="">
-                <img class="absolute brand opacity-0 -bottom-14 -right-14" src="./../img/brand.png" alt="">
+                <img src="{{ asset('/img/nurul-anam.png') }}" class="banner-avater opacity-0" alt="">
+                <img class="absolute brand opacity-0 -bottom-14 -right-14" src="{{ asset('/img/brand.png') }}" alt="">
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 md:col-span-6" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
-                <img src="./../img/about-me.png" class="about-me-img opacity-0" alt="">
+                <img src="{{ asset('/img/about-me.png') }}" class="about-me-img opacity-0" alt="">
                 <div class="circle-life absolute top-20 left-80 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-1">
                     <p class="leading-[48px] text-xs font-bold">Life</p>
                 </div>
@@ -109,15 +109,15 @@
                 <p>I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design.</p>
             </div>
             <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
-              <img src="./../img/html.png" alt="">
-              <img src="./../img/css.png" alt="">
-              <img src="./../img/js.png" alt="">
-              <img src="./../img/bootstrap.png" alt="">
-              <img src="./../img/tailwind.png" alt="">
-              <img src="./../img/php.png" alt="">
-              <img src="./../img/laravel.png" alt="">
-              <img src="./../img/wordpress.png" alt="">
-              <img src="./../img/github.png" alt="">
+              <img src="{{ asset('/img/html.png') }}" alt="">
+              <img src="{{ asset('/img/css.png') }}" alt="">
+              <img src="{{ asset('/img/js.png') }}" alt="">
+              <img src="{{ asset('/img/bootstrap.png') }}" alt="">
+              <img src="{{ asset('/img/tailwind.png') }}" alt="">
+              <img src="{{ asset('/img/php.png') }}" alt="">
+              <img src="{{ asset('/img/laravel.png') }}" alt="">
+              <img src="{{ asset('/img/wordpress.png') }}" alt="">
+              <img src="{{ asset('/img/github.png') }}" alt="">
             </div>
             <a href="#recentProjectsSection" class="btn-red group" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
           </div>
@@ -140,7 +140,7 @@
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span><span class="recent-project-item-category">Bootstrap</span></p>
-              <img src="./../img/bannergredient1.png" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
               <div class="text-center md:text-end">
                 <h4 class="text-[22px] font-semibold pb-3">Third Estate Research Application</h4>
                 <p>A research company for collaborate participants to researchers.</p>
@@ -148,21 +148,10 @@
             </div>
          </a>
 
-         <!-- <a href="#" class="group">
-            <div class="recent-project-item group">
-              <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span> <span class="recent-project-item-category">Tailwind</span></p>
-              <img src="./../img/bannergredient1.png" class="recent-project-item-thumbnail" alt="">
-              <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">Blog Management System</h4>
-                <p>Full blog management system with Seo optimizations.</p>
-              </div>
-            </div>
-          </a> -->
-
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span><span class="recent-project-item-category">Tailwind</span></p>
-              <img src="./../img/projects/pos.png" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
               <div class="text-center md:text-end">
                 <h4 class="text-[22px] font-semibold pb-3">lara - Point Of  sale</h4>
                 <p>a full Shop sell Management system.</p>
@@ -173,7 +162,7 @@
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span> <span class="recent-project-item-category">Bootstrap</span></p>
-              <img src="./../img/projects/pos.png" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
               <div class="text-center md:text-end">
                 <h4 class="text-[22px] font-semibold pb-3">PLC Ultima (CRM) System</h4>
                 <p>to store and manage information about clients or customers</p>
@@ -184,7 +173,7 @@
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">wordpress</span> <span class="recent-project-item-category">Elementor</span></p>
-              <img src="./../img/projects/pos.png" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
               <div class="text-center md:text-end">
                 <h4 class="text-[22px] font-semibold pb-3">Continental Luxury Figma to wordpress</h4>
                 <p>a full-service general contractor and construction company</p>
@@ -195,7 +184,7 @@
           <a href="#" class="group">
             <div class="recent-project-item  group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">Figma</span> <span class="recent-project-item-category">wordpress</span></p>
-              <img src="./../img/projects/pos.png" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
               <div class="text-center md:text-end">
                 <h4 class="text-[22px] font-semibold pb-3">CIAB BBQ restaurant</h4>
                 <p>strive to become the go-to destination for BBQ lovers</p>
@@ -212,7 +201,7 @@
     <!-- recent projects section end  -->
 
     <!-- testimonial section start  -->
-    <section class="testimonial-section min-h-screen flex items-center relative after:bg-[url('./img/grid-white.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
+    <section class="testimonial-section min-h-screen flex items-center relative after:bg-[url('/img/grid-white.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
       <div class="container px-4">
         <div class="flex flex-col justify-end text-center md:text-end mb-12">
           <h2 class="h2 text-white pb-6">What they <span class="text-red-main">said</span></h2>
@@ -258,13 +247,13 @@
             <div class="col-span-12 order-1 md:order-2 md:col-span-4 xl:col-span-6 justify-items-end">
               <div class="img-controllers">
                 <div class="img-controller-item">
-                  <img src="./../img/testimonial/testimonial-client-1.png" class="rounded-full object-cover" alt="">
+                  <img src="{{ asset('/img/testimonial/testimonial-client-1.png') }}" class="rounded-full object-cover" alt="">
                 </div>
                 <div class="img-controller-item">
-                  <img src="./../img/testimonial/testimonial-client-2.png" class="rounded-full object-cover" alt="">
+                  <img src="{{ asset('/img/testimonial/testimonial-client-2.png') }}" class="rounded-full object-cover" alt="">
                 </div>
                 <div class="img-controller-item">
-                  <img src="./../img/testimonial/testimonial-client-1.png" class="rounded-full object-cover" alt="">
+                  <img src="{{ asset('/img/testimonial/testimonial-client-1.png') }}" class="rounded-full object-cover" alt="">
                 </div>
               </div>
             </div>
@@ -333,7 +322,7 @@
     <!-- sercvices section end  -->
 
     <!-- case study section start  -->
-    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('./../img/grid.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
+    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('/img/grid.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
         <div class="container px-4 py-12 ">
             <h2 class="h2 text-white text-center pb-6">A Journey of <span class="text-black-main">Digital Impact</span></h2>
             <p class="max-w-2xl text-white text-lg text-center pb-12 font-medium mx-auto">Experience the power of 'Impactful Case in Motion' as it encapsulates a singular, remarkable success story in a visual narrative that leaves a lasting impression.</p>
@@ -368,8 +357,8 @@
                 </div>
                 <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
                     <div class="relative w-fit h-fit">
-                        <img class="contact-img opacity-0" src="./../img/contact-me.png" alt="" >
-                        <img class="contact-circle absolute -bottom-14 -right-14" src="./../img/lets-connect-circle.png" alt="">
+                        <img class="contact-img opacity-0" src="{{  asset('/img/contact-me.png') }}" alt="" >
+                        <img class="contact-circle absolute -bottom-14 -right-14" src="{{ asset('/img/lets-connect-circle.png') }}" alt="">
                     </div>
                 </div>
             </div>
