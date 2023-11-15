@@ -7,6 +7,9 @@
         font-family: 'Urbanist', sans-serif;
         @apply text-base bg-black-main;
     }
+    main {
+        perspective: 1px;
+    }
 }
 @layer components{
     .nav-list-item{

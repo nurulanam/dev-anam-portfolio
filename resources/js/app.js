@@ -82,13 +82,11 @@ ScrollTrigger.scrollerProxy("main", {
 });
 
 
-
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
-
 
 
 
@@ -131,7 +129,6 @@ gsap.to('.brand',{
   duration: 8,
   repeat: -1,
   ease: "linear",
-  repeat: -1,
 })
 timeline1.to('.banner-h h1',{
   opacity: 1,
@@ -341,7 +338,6 @@ function horizontalLoop(items, config) {
     duration: 8,
     repeat: -1,
     ease: "linear",
-    repeat: -1,
   })
 
 
