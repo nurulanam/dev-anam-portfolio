@@ -1,34 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  {!! SEO::generate() !!}
-  @vite('resources/js/app.js')
-</head>
-
-<body class="overflow-x-hidden bg-dark-main">
-
-  <!-- main container start  -->
-  <main>
-    <header class="px-4">
-        <nav class="bg-red-main backdrop-blur-3xl shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
-          <a href="{{ url('/') }}" class="logo text-white font-medium text-2xl">Logo</a>
-          <ul class="flex justify-end items-center gap-5">
-            <li>
-              <a href="{{ url('/projects') }}" class="nav-list-item group">Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-            </li>
-            <li>
-              <a href="" class="nav-list-item group">Services <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-            </li>
-            <li>
-              <a href="" class="nav-list-item group">Contact <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+@extends('layouts.front')
+@section('contents')
     <!-- banner section start -->
     <section
       class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
@@ -330,7 +301,7 @@
                 <iframe class="max-w-4xl max-h-[50vh] h-72 md:min-h-[450px] w-full mx-auto rounded-3xl border-8 border-gray-900 shadow-lg shadow-red-900" src="https://www.youtube.com/embed/iqdTawJQN8w?si=3Jz7Mh58l81oAoZj?rel=0&controls=0&disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  data-scroll data-scroll-speed="2"></iframe>
             </div>
             <div class="pt-12 text-center">
-                <button class="btn-red group capitalize" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nurulanam'});return false;">Book a time to talk <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></button>
+                <button class="btn-red group capitalize" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nurulanam'});return false;">Book a time to talk <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
             </div>
         </div>
     </section>
@@ -352,7 +323,7 @@
                         <div>
                             <textarea name="message" rows="8" class="contact-input" placeholder="Your input is valuable to me. Whether you have questions, ideas, or simply want to connect, don't hesitate to reach out. I'm here to listen and assist you on your journey."></textarea>
                         </div>
-                        <button class="btn-red group capitalize">Send Message <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></button>
+                        <button class="btn-red group capitalize">Send Message <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
                     </form>
                 </div>
                 <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
@@ -366,29 +337,11 @@
     </section>
     <!-- contact section end  -->
 
-    <!-- footer start  -->
-    <footer class="bg-red-main" data-scroll data-scroll-section>
-        <div class="container px-4 py-6">
-            <div class="flex flex-col md:flex-row justify-center md:justify-between items-center gap-4">
-                <p class="text-white">© 2023 dev-anam.com. All Rights Reserved.</p>
-                <div class="flex justify-items-end items-center gap-4">
-                    <a href="#" class="text-white font-medium group">Linkedin <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></a>
-                    <a href="#" class="text-white font-medium group">Behance <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></a>
-                    <a href="#" class="text-white font-medium group">Github <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></a>
-                    <a href="#" class="text-white font-medium group">Skypee <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer end  -->
+@endsection
+@section('extraJs')
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
-  </main>
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
-<!-- Calendly link widget end -->
-
-</body>
-
-</html>
+    <!-- Calendly link widget end -->
+@endsection

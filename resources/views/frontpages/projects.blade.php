@@ -1,32 +1,5 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
-  @vite('resources/js/app.js')
-</head>
-
-<body class="overflow-x-hidden bg-dark-main">
-    <main>
-        <header class="px-4">
-            <nav class="bg-red-main backdrop-blur-3xl shadow-lg fixed top-0 left-1/2 -translate-x-1/2 z-50 w-full flex justify-between xl:max-w-3xl max-w-md mx-auto mt-4 px-6 md:px-12 py-3 md:py-5 rounded-full">
-              <a href="{{ url('/') }}" class="logo text-white font-medium text-2xl">Logo</a>
-              <ul class="flex justify-end items-center gap-5">
-                <li>
-                  <a href="{{ url('/projects') }}" class="nav-list-item group">Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-                </li>
-                <li>
-                  <a href="" class="nav-list-item group">Services <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-                </li>
-                <li>
-                  <a href="" class="nav-list-item group">Contact <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
-                </li>
-              </ul>
-            </nav>
-          </header>
+@extends('layouts.front')
+@section('contents')
         <!-- banner section start -->
         <section
           class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
@@ -110,13 +83,4 @@
             </div>
             <div class="left-gredient absolute left-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-screen bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
         </section>
-        </main>
-
-        <!-- Calendly link widget begin -->
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-
-        <!-- Calendly link widget end -->
-</body>
-
-</html>
+@endsection

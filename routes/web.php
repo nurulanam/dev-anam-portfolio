@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Artesaos\SEOTools\Facades\SEOTools;
+use App\Http\Controllers\FrontendController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,13 +15,9 @@ use Artesaos\SEOTools\Facades\SEOTools;
 |
 */
 
-Route::get('/', function () {
-    SEOTools::setTitle('Home');
-    return view('index');
-});
-Route::get('/projects', function () {
-    return view('projects');
-});
+Route::get('/', [FrontendController::class, 'index'])->name('front.index');
+Route::get('/projects', [FrontendController::class, 'projects'])->name('front.projects');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
