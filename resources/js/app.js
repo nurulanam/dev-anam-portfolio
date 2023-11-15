@@ -195,7 +195,7 @@ gsap.to('.case-study-section', {
     scrollTrigger: {
       trigger: '.case-study-section',
       scroller: 'main',
-      start: 'top 50%',
+      start: 'top 65%',
       end: '+=10%',
       scrub: 2,
     }
