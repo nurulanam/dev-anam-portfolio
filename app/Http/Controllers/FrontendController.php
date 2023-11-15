@@ -16,7 +16,7 @@ class FrontendController extends Controller
     }
     public function projects(): View
     {
-        SEOTools::setTitle('My work collection');
+        SEOTools::setTitle('Projects');
         return view('frontpages.projects');
     }
 }

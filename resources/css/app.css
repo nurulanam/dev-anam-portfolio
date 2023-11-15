@@ -74,4 +74,36 @@
     .contact-input{
         @apply bg-black-main w-full text-[22px] text-center md:text-start leading-normal text-white font-bold capitalize placeholder:text-gray-400 py-3 border-b-[1px] border-transparent border-b-red-main focus-visible:outline-none focus:outline-none focus:border-transparent focus:border-b-red-main focus:ring-0;
     }
+
+    /* Project Page */
+    .project-items{
+        @apply grid grid-cols-12 gap-y-10 md:gap-y-8 gap-8 items-stretch;
+    }
+    .project-item{
+        @apply translate-y-0 opacity-100 col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden p-4 pb-6 rounded-lg bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% backdrop-blur-sm space-y-4 transition-all ease-linear;
+    }
+    .project-img{
+        @apply rounded-lg overflow-hidden;
+    }
+    .project-img img{
+        @apply shadow-md group-hover:scale-110 transition-all ease-linear;
+    }
+    .project-header h2{
+        @apply text-[26px] font-semibold text-white leading-tight;
+    }
+    .project-body p{
+        @apply text-white leading-6;
+    }
+    .project-links{
+        @apply flex justify-start items-center gap-x-4 pt-8;
+    }
+    .project-bg-gradinet{
+        @apply absolute -right-4 -top-4 w-28 h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1];
+    }
+    .project-logo-bg{
+        @apply absolute rounded-lg bg-gradient-to-tl from-red-main from-15%  via-transparent via-40% to-transparent to-80% flex items-center transition-all ease-linear opacity-0 group-hover:opacity-100 w-24 h-24 right-0 bottom-0;
+    }
+    .project-logo-bg img{
+        @apply -rotate-45 z-[2];
+    }
 }

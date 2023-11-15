@@ -33,54 +33,120 @@
         </section>
         <!-- banner section end -->
 
+        <!-- All projects section start  -->
         <section class="min-h-screen bg-black-main relative" id="allProjects" data-scroll data-scroll-section>
             <div class="container py-28 px-4">
-                <div class="project-items grid grid-cols-12 gap-y-10 md:gap-y-6 gap-6 items-stretch">
-                    <div class="project-item translate-y-0 opacity-100 col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden p-4 pb-6 group rounded-lg bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% backdrop-blur-sm space-y-4 transition-all ease-linear">
+                {{-- all projects  --}}
+                <div class="project-items">
+                    <div class="project-item group">
                         <div class="relative">
-                            <div class="card-img rounded-lg overflow-hidden">
-                                <img class="shadow-md group-hover:scale-110 transition-all ease-linear" src="{{ asset('/img/bannergredient1.png') }}" alt="">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/nathalie-hennebert-banner.png') }}" alt="">
                             </div>
-                            <div class="card-header py-6">
-                                <h3 class="text-[26px] font-semibold text-white leading-tight">NH: Interior Designer Portfolio</h3>
+                            <div class="project-header py-6">
+                                <h2>NH: Interior Designer Portfolio</h2>
                             </div>
-                            <div class="card-body">
-                                <p class="text-white leading-6">NH Interior Design's Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
-                                <div class="links flex jusity-content-start items-center gap-x-4 pt-6">
-                                    <a href="#" class="btn-red">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
-                                    <a href="#" class="btn-red">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://natsdesigns.com" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/183755053/NH-Interior-Design-Personal-Brand-Portfolio-Website" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
                                 </div>
                             </div>
-                            <div class="absolute -right-4 -top-4 w-28 h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+                            <div class="project-bg-gradinet"></div>
                         </div>
-                        <div class="absolute rounded-lg bg-gradient-to-tl from-red-main from-15%  via-transparent via-40% to-transparent to-80% flex items-center transition-all ease-linear opacity-0 group-hover:opacity-100 w-24 h-24 right-0 bottom-0">
-                            <img class="-rotate-45 z-[2]" src="{{ asset('/img/projects/oneStopLogo.png') }}" alt="">
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/nathalie-hennebert-logo.png') }}" alt="">
                         </div>
                     </div>
-                    <div class="project-item translate-y-0 opacity-100 col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden p-4 pb-6 group rounded-lg bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% backdrop-blur-sm space-y-4 transition-all ease-linear">
+                    <div class="project-item group">
                         <div class="relative">
-                            <div class="card-img rounded-lg overflow-hidden">
-                                <img class="shadow-md group-hover:scale-110 transition-all ease-linear" src="{{ asset('/img/bannergredient1.png') }}" alt="">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/qfoods-banner.png') }}" alt="">
                             </div>
-                            <div class="card-header py-6">
-                                <h3 class="text-[26px] font-semibold text-white leading-tight">NH: Interior Designer Portfolio</h3>
+                            <div class="project-header py-6">
+                                <h2>Qfoods - Figma UI/UX To WordPress</h2>
                             </div>
-                            <div class="card-body">
-                                <p class="text-white leading-6">NH Interior Design's Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
-                                <div class="links flex jusity-content-start items-center gap-x-4 pt-6">
-                                    <a href="#" class="btn-red">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
-                                    <a href="#" class="btn-red">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://www.qfoodswagyu.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/175335007/Resturant-Website-Figma-To-Wordpress" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
                                 </div>
                             </div>
-                            <div class="absolute -right-4 -top-4 w-28 h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+                            <div class="project-bg-gradinet"></div>
                         </div>
-                        <div class="absolute rounded-lg bg-gradient-to-tl from-red-main from-15%  via-transparent via-40% to-transparent to-80% flex items-center transition-all ease-linear opacity-0 group-hover:opacity-100 w-24 h-24 right-0 bottom-0">
-                            <img class="-rotate-45 z-[2]" src="{{ asset('/img/projects/oneStopLogo.png') }}" alt="">
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/qfoods-logo.png') }}" alt="">
                         </div>
                     </div>
-
+                    <div class="project-item group">
+                        <div class="relative">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/ciab-bbq-banner.png') }}" alt="">
+                            </div>
+                            <div class="project-header py-6">
+                                <h2>CIAB BBQ- Figma To Wordpress</h2>
+                            </div>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://chickeninabarrel.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/175335007/Resturant-Website-Figma-To-Wordpress" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="project-bg-gradinet"></div>
+                        </div>
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/ciab-bbq-logo.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="project-item group">
+                        <div class="relative">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/continental-luxury-banner.png') }}" alt="">
+                            </div>
+                            <div class="project-header py-6">
+                                <h2>Real Estate Company Website Design</h2>
+                            </div>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://continentalluxury.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/172201441/Real-Estate-Construction-Company-Website-Design" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="project-bg-gradinet"></div>
+                        </div>
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/continental-luxury-logo.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="project-item group">
+                        <div class="relative">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/weprosys-ltd-banner.png') }}" alt="">
+                            </div>
+                            <div class="project-header py-6">
+                                <h2>Weprosys Ltd: Agency Website Design</h2>
+                            </div>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://weprosys.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/159846727/Weprosys-digital-marketing-agency-website-design" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="project-bg-gradinet"></div>
+                        </div>
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/weprosys-ltd-logo.png') }}" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="left-gredient absolute left-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-screen bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
         </section>
+        <!-- All projects section end  -->
+
 @endsection
