@@ -13,7 +13,7 @@
 }
 @layer components{
     .nav-list-item{
-        @apply text-white font-semibold uppercase;
+        @apply block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-white md:hover:text-black-main font-semibold capitalize md:p-0 hover:bg-white/20 hover:backdrop-blur-sm md:hover:bg-transparent;
     }
     .btn-red{
         @apply bg-red-main text-white transition-all ease-linear hover:bg-red-600 font-medium px-6 py-3 rounded-lg;
@@ -28,7 +28,7 @@
         @apply flex flex-col md:flex-row transition-all duration-200 ease-linear justify-between items-center relative text-white border-b-[1px] border-red-main py-6 group-hover:bg-red-main group-hover:px-5 ;
     }
     .recent-project-item-categories{
-        @apply text-center md:text-start font-semibold transition-all ease-linear flex items-center gap-2;
+        @apply text-center md:text-start font-semibold transition-all ease-linear flex items-center gap-2 pb-4 md:pb-0;
     }
     .recent-project-item-category{
         @apply capitalize bg-red-main/30 border-[1px] border-red-main md:group-hover:opacity-0 rounded-full px-3 py-1;

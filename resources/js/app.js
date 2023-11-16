@@ -90,6 +90,35 @@ ScrollTrigger.refresh();
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+const toggleContainer = document.getElementById('toggle-container');
+
+// Check initial state and set display property
+if (window.innerWidth >= 768) {
+    toggleContainer.style.display = 'block';
+} else {
+    toggleContainer.style.display = 'none';
+}
+
+// Add click event listener to the navbar toggle button
+document.getElementById('navbar-toggle').addEventListener('click', function () {
+    // Toggle the visibility of the toggle container
+    toggleContainer.style.display = toggleContainer.style.display === 'none' ? 'block' : 'none';
+});
+
+// Update the toggle container visibility on window resize for medium devices
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 768) {
+    toggleContainer.style.display = 'block';
+    } else {
+    toggleContainer.style.display = 'none';
+    }
+});
+});
+
+
+
+
 var timeline1 = gsap.timeline();
 var timeline2 = gsap.timeline();
 var timeline3 = gsap.timeline();
@@ -97,7 +126,6 @@ var projectsTimeline = gsap.timeline();
 
 timeline1.to('.circle-php', {
   opacity: 1,
-  delay: 0.5,
 })
 gsap.to('.circle-php', {
   x: -30,
@@ -118,8 +146,8 @@ gsap.to('.circle-laravel', {
 
 timeline2.to('.banner-avater',{
   opacity: 1,
-  delay: 1,
-  duration: 1,
+  delay: 0.3,
+  duration: 0.5,
 })
 timeline2.to('.brand',{
   opacity: 1,
@@ -132,7 +160,7 @@ gsap.to('.brand',{
 })
 timeline1.to('.banner-h h1',{
   opacity: 1,
-  stagger: 0.3,
+  stagger: 0.25,
 })
 timeline1.to('.banner-p',{
   opacity: 1,
@@ -147,7 +175,7 @@ timeline3.to('.hashtags li',{
 
 timeline3.to('.banner-social-list li',{
   opacity: 1,
-  stagger: 0.3,
+  stagger: 0.25,
 })
 
 gsap.to('.about-me-img',{

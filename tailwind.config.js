@@ -11,9 +11,6 @@ export default {
 
     theme: {
         extend: {
-            fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
             colors: {
                 red: {
                   main: '#F44336',
@@ -24,10 +21,13 @@ export default {
                 black: {
                   main: '#121212',
                 }
-              },
+            },
             container: {
                 center: true,
-            }
+            },
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
         },
     },
 

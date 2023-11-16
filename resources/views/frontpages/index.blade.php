@@ -2,9 +2,9 @@
 @section('contents')
     <!-- banner section start -->
     <section
-      class="banner min-h-screen py-24 md:py-12 flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
+      class="banner min-h-screen flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.webp')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
       data-scroll data-scroll-section>
-      <div class="container px-4">
+      <div class="container px-4 py-32 md:py-12">
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 order-2 md:col-span-6 md:order-1">
             <ul class="hashtags flex items-center justify-center md:justify-start gap-2 mb-4">
@@ -13,39 +13,36 @@
               <li class="text-white opacity-0"><span class="text-red-main">#</span>Developer</li>
             </ul>
             <div class="banner-h text-center md:text-start">
-              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-tight font-semibold">Hello,</h1>
-              <h1 class="opacity-0 text-white text-5xl lg:text-[80px] leading-none font-semibold">I'm <span class="text-red-main">Nurul</span> Anam<span class="text-red-main">.</span></h1>
+              <h1 class="opacity-0 text-white text-5xl lg:text-[68px] xl:text-[80px] leading-tight font-semibold">Hello,</h1>
+              <h1 class="opacity-0 text-white text-5xl lg:text-[68px] xl:text-[80px] leading-none font-semibold">I'm <span class="text-red-main">Nurul</span> Anam<span class="text-red-main">.</span></h1>
             </div>
             <p class="banner-p text-center md:text-start text-lg font-medium text-white opacity-0 pt-5 xl:pe-80">I take pride in my ability to deliver solutions that not only meet but exceed your expectations.</p>
             <a href="#aboutMe" class="flex justify-center md:justify-start" data-scroll-to>
               <button type="button" class="btn-red mt-12 opacity-0 group">Know More <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button></a>
             <ul class="banner-social-list flex items-center justify-center md:justify-start gap-4 mt-6">
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('/svg/github.svg') }}" alt=""></a>
+                <a href="https://github.com/nurulanam/" target="_blank"><img src="{{ asset('/svg/github.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/linkedin.svg') }}" alt=""></a>
+                <a href="https://www.linkedin.com/in/nurul-anam/" target="_blank"><img src="{{ asset('svg/linkedin.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/slack.svg') }}" alt=""></a>
+                <a href="https://www.behance.net/nurulanam" target="_blank"><img src="{{ asset('svg/behance.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/behance.svg') }}" alt=""></a>
+                <a href="https://wa.me/+8801787419798" target="_blank"><img src="{{ asset('svg/whatsapp.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/whatsapp.svg') }}" alt=""></a>
+                <a href="https://t.me/dev_anam" target="_blank"><img src="{{ asset('svg/telegram.svg') }}" alt=""></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/telegram.svg') }}" alt=""></a>
-              </li>
-              <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href=""><img src="{{ asset('svg/skypee.svg') }}" alt=""></a>
+                <a href="skype:live:nurulanam.bd?chat" target="_blank"><img src="{{ asset('svg/skypee.svg') }}" alt=""></a>
               </li>
             </ul>
           </div>
           <div class="col-span-12 order-1 md:col-span-6 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
-                <img src="{{ asset('/img/nurul-anam.png') }}" class="banner-avater opacity-0" alt="">
+                <img src="{{ asset('/img/nurul_anam.webp') }}" class="banner-avater opacity-0" alt="">
                 <img class="absolute brand opacity-0 -bottom-14 -right-14" src="{{ asset('/img/brand.png') }}" alt="">
             </div>
           </div>
@@ -172,7 +169,7 @@
     <!-- recent projects section end  -->
 
     <!-- testimonial section start  -->
-    <section class="testimonial-section min-h-screen flex items-center relative after:bg-[url('/img/grid-white.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
+    <section class="testimonial-section min-h-screen flex items-center relative after:bg-[url('/img/grid-white.webp')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
       <div class="container px-4">
         <div class="flex flex-col justify-end text-center md:text-end mb-12">
           <h2 class="h2 text-white pb-6">What they <span class="text-red-main">said</span></h2>
@@ -200,13 +197,6 @@
                           <p class="text-white">CEO BDS Associate.</p>
                         </div>
                       </div>
-                      <div class="testimonial-item">
-                        <p class="testimonial-text">I can confidently say that Nurul Anam has played a vital role in improving our website's visibility and helping us achieve our business objectives. I highly suggest Nurul to anyone looking for a professional and passionate website designer who can make their ideas a reality. Thank you very much for your excellent effort!</p>
-                        <div class="testimonial-user-data py-6">
-                          <h4 class="text-red-main text-xl font-medium leading-normal">Jhon 3</h4>
-                          <p class="text-white">Project manager</p>
-                        </div>
-                      </div>
                   </div>
                   <div class="testimonial-controller">
                     <span class="testimonial-controller-item controller-left"><i class="fa-solid fa-arrow-left-long"></i></span>
@@ -222,9 +212,6 @@
                 </div>
                 <div class="img-controller-item">
                   <img src="{{ asset('/img/testimonial/testimonial-client-2.png') }}" class="rounded-full object-cover" alt="">
-                </div>
-                <div class="img-controller-item">
-                  <img src="{{ asset('/img/testimonial/testimonial-client-1.png') }}" class="rounded-full object-cover" alt="">
                 </div>
               </div>
             </div>
@@ -293,7 +280,7 @@
     <!-- sercvices section end  -->
 
     <!-- case study section start  -->
-    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('/img/grid.png')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
+    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('/img/grid.webp')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
         <div class="container px-4 py-12 ">
             <h2 class="h2 text-white text-center pb-6">A Journey of <span class="text-black-main">Digital Impact</span></h2>
             <p class="max-w-2xl text-white text-lg text-center pb-12 font-medium mx-auto">Experience the power of 'Impactful Case in Motion' as it encapsulates a singular, remarkable success story in a visual narrative that leaves a lasting impression.</p>
