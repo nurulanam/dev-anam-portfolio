@@ -41,13 +41,34 @@
                     <div class="project-item group">
                         <div class="relative">
                             <div class="project-img">
-                                <img src="{{ asset('/img/projects/nathalie-hennebert-banner.png') }}" alt="">
+                                <img src="{{ asset('/img/projects/third-estate-research-banner.webp') }}" alt="">
                             </div>
                             <div class="project-header py-6">
-                                <h2>NH: Interior Designer Portfolio</h2>
+                                <h2>Third Estate Research Application | PHP Laravel & WordPress Project</h2>
                             </div>
                             <div class="project-body">
-                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <p>Discover the innovative Third Estate Research Application, a dynamic project combining PHP Laravel and WordPress. This powerful web application utilizes Bootstrap CSS to deliver a seamless user experience. Explore the cutting-edge solutions crafted for Third Estate Research.</p>
+                                <div class="project-links">
+                                    <a href="https://natsdesigns.com" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/183755053/NH-Interior-Design-Personal-Brand-Portfolio-Website" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="project-bg-gradinet"></div>
+                        </div>
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/third-estate-research-logo.webp') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="project-item group">
+                        <div class="relative">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/nathalie-hennebert-banner.webp') }}" alt="">
+                            </div>
+                            <div class="project-header py-6">
+                                <h2>Nats Designs: Interior Designer Portfolio | WordPress Portfolio</h2>
+                            </div>
+                            <div class="project-body">
+                                <p>Explore Nats Designs, a captivating portfolio of interior design projects crafted with WordPress. Discover the creative vision and attention to detail showcased in each project, bringing spaces to life with style and elegance. Experience the fusion of design and technology in Nats Designs' WordPress portfolio.</p>
                                 <div class="project-links">
                                     <a href="https://natsdesigns.com" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
                                     <a href="https://www.behance.net/gallery/183755053/NH-Interior-Design-Personal-Brand-Portfolio-Website" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
@@ -62,13 +83,13 @@
                     <div class="project-item group">
                         <div class="relative">
                             <div class="project-img">
-                                <img src="{{ asset('/img/projects/qfoods-banner.png') }}" alt="">
+                                <img src="{{ asset('/img/projects/qfoods-banner.webp') }}" alt="">
                             </div>
                             <div class="project-header py-6">
-                                <h2>Qfoods - Figma UI/UX To WordPress</h2>
+                                <h2>Qfoods - Japanese Wagyu Imports | Figma UI/UX to WordPress Conversion</h2>
                             </div>
                             <div class="project-body">
-                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <p>Qfoods - Bridging Elegance: Transformed Figma UI/UX to WordPress for QFoods, a leading Japanese Wagyu importer. Immerse in a seamless digital journey that mirrors the exquisite quality of their products. Elevate your culinary experience with Qfoods' WordPress integration.</p>
                                 <div class="project-links">
                                     <a href="https://www.qfoodswagyu.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
                                     <a href="https://www.behance.net/gallery/175335007/Resturant-Website-Figma-To-Wordpress" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
@@ -83,28 +104,7 @@
                     <div class="project-item group">
                         <div class="relative">
                             <div class="project-img">
-                                <img src="{{ asset('/img/projects/ciab-bbq-banner.png') }}" alt="">
-                            </div>
-                            <div class="project-header py-6">
-                                <h2>CIAB BBQ- Figma To Wordpress</h2>
-                            </div>
-                            <div class="project-body">
-                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
-                                <div class="project-links">
-                                    <a href="https://chickeninabarrel.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
-                                    <a href="https://www.behance.net/gallery/175335007/Resturant-Website-Figma-To-Wordpress" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
-                                </div>
-                            </div>
-                            <div class="project-bg-gradinet"></div>
-                        </div>
-                        <div class="project-logo-bg">
-                            <img src="{{ asset('/img/projects/ciab-bbq-logo.png') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="project-item group">
-                        <div class="relative">
-                            <div class="project-img">
-                                <img src="{{ asset('/img/projects/continental-luxury-banner.png') }}" alt="">
+                                <img src="{{ asset('/img/projects/continental-luxury-banner.webp') }}" alt="">
                             </div>
                             <div class="project-header py-6">
                                 <h2>Real Estate Company Website Design</h2>
@@ -125,7 +125,28 @@
                     <div class="project-item group">
                         <div class="relative">
                             <div class="project-img">
-                                <img src="{{ asset('/img/projects/weprosys-ltd-banner.png') }}" alt="">
+                                <img src="{{ asset('/img/projects/ciab-bbq-banner.webp') }}" alt="">
+                            </div>
+                            <div class="project-header py-6">
+                                <h2>CIAB BBQ- Figma To Wordpress</h2>
+                            </div>
+                            <div class="project-body">
+                                <p>Natsdesigns Personal Brand Portfolio Website, built with WordPress and Elementor Pro, beautifully represents exceptional interior design expertise. The site showcases a unique style and vision, demonstrating the seamless integration of design and technology.</p>
+                                <div class="project-links">
+                                    <a href="https://chickeninabarrel.com/" class="btn-red" target="_blank">Live Preview <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                    <a href="https://www.behance.net/gallery/175335007/Resturant-Website-Figma-To-Wordpress" class="btn-red" target="_blank">Behance.Net <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear"></i></span></a>
+                                </div>
+                            </div>
+                            <div class="project-bg-gradinet"></div>
+                        </div>
+                        <div class="project-logo-bg">
+                            <img src="{{ asset('/img/projects/ciab-bbq-logo.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="project-item group">
+                        <div class="relative">
+                            <div class="project-img">
+                                <img src="{{ asset('/img/projects/weprosys-ltd-banner.webp') }}" alt="">
                             </div>
                             <div class="project-header py-6">
                                 <h2>Weprosys Ltd: Agency Website Design</h2>

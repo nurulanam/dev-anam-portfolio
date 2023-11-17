@@ -13,7 +13,7 @@
 }
 @layer components{
     .nav-list-item{
-        @apply block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-white md:hover:text-black-main font-semibold capitalize md:p-0 hover:bg-white/20 hover:backdrop-blur-sm md:hover:bg-transparent;
+        @apply block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 text-white md:hover:text-black-main font-semibold capitalize md:p-0 hover:bg-white/20 hover:backdrop-blur-sm;
     }
     .btn-red{
         @apply bg-red-main text-white transition-all ease-linear hover:bg-red-600 font-medium px-6 py-3 rounded-lg;
@@ -22,7 +22,7 @@
         @apply rotate-45
     }
     .h2{
-        @apply text-[45px] lg:text-[58px] leading-none font-semibold;
+        @apply text-[45px] lg:text-[48px] xl:text-[58px] leading-tight font-semibold;
     }
     .recent-project-item{
         @apply flex flex-col md:flex-row transition-all duration-200 ease-linear justify-between items-center relative text-white border-b-[1px] border-red-main py-6 group-hover:bg-red-main group-hover:px-5 ;
@@ -80,7 +80,7 @@
         @apply grid grid-cols-12 gap-y-10 md:gap-y-8 gap-8 items-stretch;
     }
     .project-item{
-        @apply translate-y-0 opacity-100 col-span-12 md:col-span-6 lg:col-span-4 overflow-hidden p-4 pb-6 rounded-lg bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% backdrop-blur-sm space-y-4 transition-all ease-linear;
+        @apply translate-y-0 opacity-100 col-span-12 md:col-span-6 xl:col-span-4 overflow-hidden p-4 pb-6 rounded-lg bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% backdrop-blur-sm space-y-4 transition-all ease-linear;
     }
     .project-img{
         @apply rounded-lg overflow-hidden;
