@@ -34,7 +34,7 @@
         @apply capitalize bg-red-main/30 border-[1px] border-red-main md:group-hover:opacity-0 rounded-full px-3 py-1;
     }
     .recent-project-item-thumbnail{
-        @apply absolute -left-12 md:group-hover:left-5 z-40 max-h-36 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100 border-[3px] border-red-main rounded-xl;
+        @apply absolute -left-12 md:group-hover:left-5 z-40 max-h-48 transition-all duration-200 ease-linear opacity-0 md:group-hover:opacity-100;
     }
     .testimonial-item{
         @apply text-center md:text-start;
@@ -89,7 +89,7 @@
         @apply shadow-md group-hover:scale-110 transition-all ease-linear;
     }
     .project-header h2{
-        @apply text-[26px] font-semibold text-white leading-tight;
+        @apply  text-xl lg:text-[26px] font-semibold text-white leading-tight;
     }
     .project-body p{
         @apply text-white leading-6;

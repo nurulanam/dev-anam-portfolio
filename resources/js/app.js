@@ -64,7 +64,8 @@ const locoScroll = new LocomotiveScroll({
   },
   tablet: {
       smooth: true
-  }
+  },
+  multiplier: 1.2,
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
 locoScroll.on("scroll", ScrollTrigger.update);

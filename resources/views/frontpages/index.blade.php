@@ -13,37 +13,38 @@
               <li class="text-white opacity-0"><span class="text-red-main">#</span>Developer</li>
             </ul>
             <div class="banner-h text-center md:text-start">
-              <h1 class="opacity-0 text-white text-5xl lg:text-[68px] xl:text-[80px] leading-tight font-semibold">Hello,</h1>
-              <h1 class="opacity-0 text-white text-5xl lg:text-[68px] xl:text-[80px] leading-none font-semibold">I'm <span class="text-red-main">Nurul</span> Anam<span class="text-red-main">.</span></h1>
+               <h1 class="opacity-0 text-white text-5xl lg:text-[68px] xl:text-[76px] leading-tight font-semibold">
+                Hello,<br> I'm <span class="text-red-main">Nurul</span> Anam<span class="text-red-main">.</span>
+              </h1>
             </div>
             <p class="banner-p text-center md:text-start text-lg font-medium text-white opacity-0 pt-5 xl:pe-80">I take pride in my ability to deliver solutions that not only meet but exceed your expectations.</p>
             <a href="#aboutMe" class="flex justify-center md:justify-start" data-scroll-to>
               <button type="button" class="btn-red mt-12 opacity-0 group">Know More <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button></a>
             <ul class="banner-social-list flex items-center justify-center md:justify-start gap-4 mt-6">
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="https://github.com/nurulanam/" target="_blank"><img src="{{ asset('/svg/github.svg') }}" alt=""></a>
+                <a href="https://github.com/nurulanam/" target="_blank"><img src="{{ asset('/svg/github.svg') }}" alt="github"></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="https://www.linkedin.com/in/nurul-anam/" target="_blank"><img src="{{ asset('svg/linkedin.svg') }}" alt=""></a>
+                <a href="https://www.linkedin.com/in/nurul-anam/" target="_blank"><img src="{{ asset('svg/linkedin.svg') }}" alt="linkedin"></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="https://www.behance.net/nurulanam" target="_blank"><img src="{{ asset('svg/behance.svg') }}" alt=""></a>
+                <a href="https://www.behance.net/nurulanam" target="_blank"><img src="{{ asset('svg/behance.svg') }}" alt="behance"></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="https://wa.me/+8801787419798" target="_blank"><img src="{{ asset('svg/whatsapp.svg') }}" alt=""></a>
+                <a href="https://wa.me/+8801787419798" target="_blank"><img src="{{ asset('svg/whatsapp.svg') }}" alt="whatsapp"></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="https://t.me/dev_anam" target="_blank"><img src="{{ asset('svg/telegram.svg') }}" alt=""></a>
+                <a href="https://t.me/dev_anam" target="_blank"><img src="{{ asset('svg/telegram.svg') }}" alt="telegram"></a>
               </li>
               <li class="opacity-0 transition-all ease-linear hover:-translate-y-2 hover:scale-125">
-                <a href="skype:live:nurulanam.bd?chat" target="_blank"><img src="{{ asset('svg/skypee.svg') }}" alt=""></a>
+                <a href="skype:live:nurulanam.bd?chat" target="_blank"><img src="{{ asset('svg/skypee.svg') }}" alt="skypee"></a>
               </li>
             </ul>
           </div>
           <div class="col-span-12 order-1 md:col-span-6 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
-                <img src="{{ asset('/img/nurul_anam.webp') }}" class="banner-avater opacity-0" alt="">
-                <img class="absolute brand opacity-0 -bottom-14 -right-14" src="{{ asset('/img/brand.png') }}" alt="">
+                <img src="{{ asset('/img/nurul-anam.webp') }}" class="banner-avater opacity-0" alt="nuru-lanam">
+                <img class="absolute brand opacity-0 -bottom-14 -right-14" src="{{ asset('/img/brand.png') }}" alt="brand">
             </div>
           </div>
         </div>
@@ -64,7 +65,7 @@
         <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 md:col-span-6" data-scroll data-scroll-speed="3">
             <div class="relative w-fit h-fit">
-                <img src="{{ asset('/img/about-me.png') }}" class="about-me-img opacity-0" alt="">
+                <img src="{{ asset('/img/about-me.webp') }}" class="about-me-img opacity-0" alt="about-me">
                 <div class="circle-life absolute top-20 left-80 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-1">
                     <p class="leading-[48px] text-xs font-bold">Life</p>
                 </div>
@@ -77,15 +78,15 @@
                 <p>I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design.</p>
             </div>
             <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
-              <img src="{{ asset('/img/html.png') }}" alt="">
-              <img src="{{ asset('/img/css.png') }}" alt="">
-              <img src="{{ asset('/img/js.png') }}" alt="">
-              <img src="{{ asset('/img/bootstrap.png') }}" alt="">
-              <img src="{{ asset('/img/tailwind.png') }}" alt="">
-              <img src="{{ asset('/img/php.png') }}" alt="">
-              <img src="{{ asset('/img/laravel.png') }}" alt="">
-              <img src="{{ asset('/img/wordpress.png') }}" alt="">
-              <img src="{{ asset('/img/github.png') }}" alt="">
+              <img src="{{ asset('/img/html.png') }}" alt="html">
+              <img src="{{ asset('/img/css.png') }}" alt="css">
+              <img src="{{ asset('/img/js.png') }}" alt="js">
+              <img src="{{ asset('/img/bootstrap.png') }}" alt="bootstrap css">
+              <img src="{{ asset('/img/tailwind.png') }}" alt="tailwind css">
+              <img src="{{ asset('/img/php.png') }}" alt="php">
+              <img src="{{ asset('/img/laravel.png') }}" alt="laravel">
+              <img src="{{ asset('/img/wordpress.png') }}" alt="wordpress">
+              <img src="{{ asset('/img/github.png') }}" alt="github">
             </div>
             <a href="#recentProjectsSection" class="btn-red group" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
           </div>
@@ -105,24 +106,24 @@
 
         <div class="flex flex-col first:border-t-2 first:border-red-main">
           <!-- recent projet items  -->
-          <a href="#" class="group">
+          <a href="https://thirdestateresearch.com/" target="_blank" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span><span class="recent-project-item-category">Bootstrap</span></p>
-              <img src="{{ asset('/img/projects/third-estate-research-banner.webp') }}" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/projects/third-estate-research-banner.webp') }}" class="recent-project-item-thumbnail" alt="third estate research">
               <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">Third Estate Research Application</h4>
+                <h4 class="text-[22px] font-semibold pb-3">Third Estate Research</h4>
                 <p>A research company for collaborate participants to researchers.</p>
               </div>
             </div>
          </a>
 
-          <a href="#" class="group">
+          <a href="https://natsdesigns.com" target="_blank" class="group">
             <div class="recent-project-item group">
-              <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span><span class="recent-project-item-category">Tailwind</span></p>
-              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
+              <p class="recent-project-item-categories"><span class="recent-project-item-category">WordPress</span><span class="recent-project-item-category">Elementor Pro</span></p>
+              <img src="{{ asset('/img/projects/nathalie-hennebert-banner.webp') }}" class="recent-project-item-thumbnail" alt="nats designs">
               <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">lara - Point Of  sale</h4>
-                <p>a full Shop sell Management system.</p>
+                <h4 class="text-[22px] font-semibold pb-3">Nats Designs</h4>
+                <p>A captivating portfolio of interior design projects crafted with WordPress.</p>
               </div>
             </div>
           </a>
@@ -130,10 +131,10 @@
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">laravel</span> <span class="recent-project-item-category">Bootstrap</span></p>
-              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/projects/qfoods-banner.webp') }}" class="recent-project-item-thumbnail" alt="qfood japanese wagyu">
               <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">PLC Ultima (CRM) System</h4>
-                <p>to store and manage information about clients or customers</p>
+                <h4 class="text-[22px] font-semibold pb-3">Qfoods - Japanese Wagyu</h4>
+                <p>Transformed Figma UI/UX to WordPress for QFoods.</p>
               </div>
             </div>
           </a>
@@ -141,10 +142,10 @@
           <a href="#" class="group">
             <div class="recent-project-item group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">wordpress</span> <span class="recent-project-item-category">Elementor</span></p>
-              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/projects/continental-luxury-banner.webp') }}" class="recent-project-item-thumbnail" alt="continental luxury real estate">
               <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">Continental Luxury Figma to wordpress</h4>
-                <p>a full-service general contractor and construction company</p>
+                <h4 class="text-[22px] font-semibold pb-3">Continental Luxury Real Estate</h4>
+                <p>I transformed Continental Luxury's online presence with WordPress.</p>
               </div>
             </div>
           </a>
@@ -152,17 +153,17 @@
           <a href="#" class="group">
             <div class="recent-project-item  group">
               <p class="recent-project-item-categories"><span class="recent-project-item-category">Figma</span> <span class="recent-project-item-category">wordpress</span></p>
-              <img src="{{ asset('/img/bannergredient1.png') }}" class="recent-project-item-thumbnail" alt="">
+              <img src="{{ asset('/img/projects/ciab-bbq-banner.webp') }}" class="recent-project-item-thumbnail" alt="chicken in a barrel">
               <div class="text-center md:text-end">
-                <h4 class="text-[22px] font-semibold pb-3">CIAB BBQ restaurant</h4>
-                <p>strive to become the go-to destination for BBQ lovers</p>
+                <h4 class="text-[22px] font-semibold pb-3">Chicken In a Barrel BBQ</h4>
+                <p>Figma to WordPress conversion journey for Chicken In a Barrel.</p>
               </div>
             </div>
           </a>
 
         </div>
         <div class="flex justify-center items-center">
-          <a href="#" class="btn-red mt-12 group">All projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+          <a href="{{ route('front.portfolio') }}" class="btn-red mt-12 group">All projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
         </div>
       </div>
     </section>
@@ -208,10 +209,10 @@
             <div class="col-span-12 order-1 md:order-2 md:col-span-4 xl:col-span-6 justify-items-end">
               <div class="img-controllers">
                 <div class="img-controller-item">
-                  <img src="{{ asset('/img/testimonial/testimonial-client-1.png') }}" class="rounded-full object-cover" alt="">
+                  <img src="{{ asset('/img/testimonial/testimonial-client-1.png') }}" class="rounded-full object-cover" alt="sayed sakil">
                 </div>
                 <div class="img-controller-item">
-                  <img src="{{ asset('/img/testimonial/testimonial-client-2.png') }}" class="rounded-full object-cover" alt="">
+                  <img src="{{ asset('/img/testimonial/testimonial-client-2.png') }}" class="rounded-full object-cover" alt=" changis khan raju">
                 </div>
               </div>
             </div>
@@ -243,7 +244,7 @@
         <div class="grid grid-cols-12 gap-6 lg:gap-0">
           <div class="col-span-12 md:col-span-6">
             <div class="md:pt-[20vh] md:pb-[30vh] text-center md:text-start" data-scroll data-scroll-sticky data-scroll-target="#secvices">
-              <h2 class="h2 text-white pb-2 md:pb-6">Bringing</h2>
+              <h2 class="h2 text-white pb-2 md:pb-2">Bringing</h2>
               <h2 class="h2 text-red-main pb-6">Digital Dreams <span class="text-white">to Life</span></h2>
               <p class="services-desctiption text-gray-500 text-lg font-medium lg:pr-[35%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
               <a href="#" class="btn-red group inline-block">Start a Project <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
@@ -315,8 +316,8 @@
                 </div>
                 <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
                     <div class="relative w-fit h-fit">
-                        <img class="contact-img opacity-0" src="{{  asset('/img/contact-me.png') }}" alt="" >
-                        <img class="contact-circle absolute -bottom-14 -right-14" src="{{ asset('/img/lets-connect-circle.png') }}" alt="">
+                        <img class="contact-img opacity-0" src="{{  asset('/img/contact-me.webp') }}" alt="contact me" >
+                        <img class="contact-circle absolute -bottom-14 -right-14" src="{{ asset('/img/lets-connect-circle.png') }}" alt="lets connect circle">
                     </div>
                 </div>
             </div>

@@ -16,7 +16,8 @@ use App\Http\Controllers\FrontendController;
 */
 
 Route::get('/', [FrontendController::class, 'index'])->name('front.index');
-Route::get('/projects', [FrontendController::class, 'projects'])->name('front.projects');
+Route::get('/my-portfolio', [FrontendController::class, 'portfolio'])->name('front.portfolio');
+Route::get('/services', [FrontendController::class, 'services'])->name('front.services');
 
 
 Route::get('/dashboard', function () {
