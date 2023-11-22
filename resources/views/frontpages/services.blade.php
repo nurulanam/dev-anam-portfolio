@@ -27,7 +27,7 @@
                     data-scroll-speed="3">
                     <div class="relative w-fit h-fit">
                         <img src="{{ asset('/img/service-hero.svg') }}" class="banner-avater opacity-0" alt="my portfolio">
-                        <img class="absolute brand opacity-0 -bottom-8 -right-10" src="{{ asset('/img/brand.png') }}"
+                        <img class="absolute brand opacity-0 -bottom-12 -right-10" src="{{ asset('/img/brand.png') }}"
                             alt="brand">
                     </div>
                 </div>
@@ -91,9 +91,7 @@
                                 <h2 class="text-lg lg:text-3xl font-bold text-white">Web Forge</h2>
                             </div>
                             <div class="service-details pb-6 border-b-[1px] border-b-red-main">
-                                <p class="text-white">This package is designed for businesses that need a more custom-built and
-                                    sophisticated website. It includes all of the features of the Web Starter, plus the
-                                    following:</p>
+                                <p class="text-white">Designed for those who need a more custom-built and suave website. It includes all of the features of the Web Starter, plus the following:</p>
                             </div>
                             <div class="service-offers ps-4">
                                 <ul class="text-white marker:text-red-main list-disc space-y-4">
@@ -123,8 +121,7 @@
                                 <h2 class="text-lg lg:text-3xl font-bold text-white">Commerce Peak</h2>
                             </div>
                             <div class="service-details pb-6 border-b-[1px] border-b-red-main">
-                                <p class="text-white">Elevate your online presence with a comprehensive e-commerce solution,
-                                    seamlessly integrated with the Web Starter pack.</p>
+                                <p class="text-white">This is a comprehensive e-commerce solution, seamlessly integrated with includes all of the features of the Web Starter, plus the following:.</p>
                             </div>
                             <div class="service-offers ps-4">
                                 <ul class="text-white marker:text-red-main list-disc space-y-4">
@@ -140,7 +137,7 @@
                         <div class="pt-10 space-y-6">
                             <div class="price flex items-center gap-4">
                                 <div class="offer-price text-3xl font-bold text-red-main">$1500</div>
-                                {{-- <div class="discount text-lg font-medium text-white"><del>$500</del></div> --}}
+                                <div class="discount text-lg font-medium text-white"><del></del></div>
                             </div>
                             <a href="{{ url("/contact?package=commerce_pack") }}" class="btn-red block text-center group">Contact To Order <span class="ms-1"><i
                                         class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
