@@ -16,6 +16,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "flowbite": "^2.2.0",
         "gsap": "^3.12.2",
         "locomotive-scroll": "^4.1.4"
     }

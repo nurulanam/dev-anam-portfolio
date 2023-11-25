@@ -8,6 +8,7 @@ import Alpine from 'alpinejs';
 import LocomotiveScroll from 'locomotive-scroll';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import 'flowbite';
 
 
 window.Alpine = Alpine;
@@ -444,3 +445,17 @@ function horizontalLoop(items, config) {
 
 
 
+
+
+//   services page
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+for (const accordionItem of accordionItems) {
+  const accordionHeader = accordionItem.querySelector('.accordion-header');
+  const accordionCollapse = accordionItem.querySelector('.accordion-collapse');
+
+  accordionHeader.addEventListener('click', () => {
+    accordionItem.classList.toggle('active');
+    accordionCollapse.classList.toggle('hidden');
+  });
+}

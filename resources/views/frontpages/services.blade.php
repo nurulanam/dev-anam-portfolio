@@ -91,7 +91,8 @@
                                 <h2 class="text-lg lg:text-3xl font-bold text-white">Web Forge</h2>
                             </div>
                             <div class="service-details pb-6 border-b-[1px] border-b-red-main">
-                                <p class="text-white">Designed for those who need a more custom-built and suave website. It includes all of the features of the Web Starter, plus the following:</p>
+                                <p class="text-white">Designed for those who need a more custom-built and suave website. It
+                                    includes all of the features of the Web Starter, plus the following:</p>
                             </div>
                             <div class="service-offers ps-4">
                                 <ul class="text-white marker:text-red-main list-disc space-y-4">
@@ -108,7 +109,8 @@
                                 <div class="offer-price text-3xl font-bold text-red-main">$999</div>
                                 <div class="discount text-lg font-medium text-white"><del>$1450</del></div>
                             </div>
-                            <a href="#" class="btn-red block text-center group">Contact To Order <span class="ms-1"><i
+                            <a href="#" class="btn-red block text-center group">Contact To Order <span
+                                    class="ms-1"><i
                                         class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
                         </div>
                     </div>
@@ -121,7 +123,8 @@
                                 <h2 class="text-lg lg:text-3xl font-bold text-white">Commerce Peak</h2>
                             </div>
                             <div class="service-details pb-6 border-b-[1px] border-b-red-main">
-                                <p class="text-white">This is a comprehensive e-commerce solution, seamlessly integrated with includes all of the features of the Web Starter, plus the following:.</p>
+                                <p class="text-white">This is a comprehensive e-commerce solution, seamlessly integrated
+                                    with includes all of the features of the Web Starter, plus the following:.</p>
                             </div>
                             <div class="service-offers ps-4">
                                 <ul class="text-white marker:text-red-main list-disc space-y-4">
@@ -139,7 +142,8 @@
                                 <div class="offer-price text-3xl font-bold text-red-main">$1500</div>
                                 <div class="discount text-lg font-medium text-white"><del></del></div>
                             </div>
-                            <a href="{{ url("/contact?package=commerce_pack") }}" class="btn-red block text-center group">Contact To Order <span class="ms-1"><i
+                            <a href="{{ url('/contact?package=commerce_pack') }}"
+                                class="btn-red block text-center group">Contact To Order <span class="ms-1"><i
                                         class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
                         </div>
                     </div>
@@ -148,4 +152,118 @@
         </div>
     </section>
     {{-- services section end  --}}
+
+    {{-- why me section start  --}}
+    <section class="why-me min-h-screen flex items-center bg-black-main relative" data-scroll data-scroll-section>
+        <div class="container px-4 py-32 md:py-12">
+            <div class="grid grid-cols-12 md:gap-4 items-center">
+                <div class="col-span-12 md:col-span-6 text-center md:text-start">
+                    <h2 class="h2 text-white pb-6">Why My <br><span class="text-red-main">Services</span> Matter</h2>
+                    <p class="text-white text-lg font-medium lg:pr-[30%] pb-12">My web design and development services are
+                        the key to unlocking your brand's potential and achieving your online goals. With my expertise in
+                        design, development, and SEO, I can craft a website that not only captures attention but also drives
+                        results. Let me help you establish a digital presence that truly matters.</p>
+                    <button class="btn-red group capitalize" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nurulanam'});return false;">Book a time to talk <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
+
+                </div>
+                <div class="col-span-12 md:col-span-6 items-center">
+                    <div id="accordion-color" data-accordion="collapse"
+                        data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+                        <h2 id="accordion-color-heading-1">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 text-lg font-bold rtl:text-right text-white border border-b-0 border-gray-700 rounded-t-xl focus:ring-0 bg-gray-800 hover:bg-red-main hover:text-white gap-3"
+                                data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                                aria-controls="accordion-color-body-1">
+                                <span>Stand Out from the Crowd.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                            <div class="p-5 border border-b-0 border-gray-700 bg-black-main">
+                                <p class="mb-3 text-white"><b>Unleash Your Brand's Potential:</b> I craft captivating designs that capture attention, resonate with your audience, and propel your brand to new heights.</p>
+                                <p class="mb-3 text-white"><b>Experience the Power of Innovation:</b> I embrace cutting-edge technologies and design trends to deliver websites that are not only visually stunning but also functionally exceptional.</p>
+                                <p class="mb-3 text-white"><b>Your Vision, My Passion:</b> I collaborate closely with you to understand your unique vision and translate it into a digital masterpiece that exceeds your expectations.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-color-heading-2">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 text-lg font-bold rtl:text-right text-white border border-b-0 border-gray-700 focus:ring-0 bg-gray-800 hover:bg-red-main hover:text-white gap-3"
+                                data-accordion-target="#accordion-color-body-2" aria-expanded="true"
+                                aria-controls="accordion-color-body-2">
+                                <span>Expertise You Can Trust.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div class="p-5 border border-b-0 border-gray-700 bg-black-main">
+                                <p class="mb-3 text-white"><b>A Master of Design:</b> With extensive experience in HTML, CSS, Tailwind CSS, Bootstrap, WordPress, and Elementor Pro, I possess the skills to bring your design dreams to life.</p>
+                                <p class="mb-3 text-white"><b>Laravel and PHP Mastery:</b> I am proficient in Laravel and PHP, enabling me to develop dynamic and secure web applications that seamlessly integrate with your existing systems.</p>
+                                <p class="mb-3 text-white"><b>AJAX Wizardry:</b> I leverage AJAX to create interactive and engaging user experiences that keep your visitors captivated and coming back for more.</p>
+                            </div>
+                        </div>
+                        <h2 id="accordion-color-heading-3">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 text-lg font-bold rtl:text-right text-white border border-b-0 border-gray-700 focus:ring-0 bg-gray-800 hover:bg-red-main hover:text-white gap-3"
+                                data-accordion-target="#accordion-color-body-3" aria-expanded="true"
+                                aria-controls="accordion-color-body-3">
+                                <span>Partner with a True Professional.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div class="p-5 border border-b-0 border-gray-700 bg-black-main">
+                                <p class="mb-3 text-white"><b>Unwavering Commitment:</b> I am dedicated to providing exceptional service, ensuring that your project is completed on time, within budget, and to your utmost satisfaction.</p>
+                                <p class="mb-3 text-white"><b>Transparency and Trust:</b> I maintain open communication throughout the entire process, keeping you informed and involved every step of the way.</p>
+                                <p class="mb-3 text-white"><b>A Passion for Perfection:</b> I approach each project with meticulous attention to detail, ensuring that every pixel and line of code is meticulously crafted.</p>
+                            </div>
+                        </div>
+                         <h2 id="accordion-color-heading-4">
+                            <button type="button"
+                                class="flex items-center justify-between w-full p-5 text-lg font-bold rtl:text-right text-white border border-b-0 border-gray-700 focus:ring-0 bg-gray-800 hover:bg-red-main hover:text-white gap-3"
+                                data-accordion-target="#accordion-color-body-4" aria-expanded="true"
+                                aria-controls="accordion-color-body-4">
+                                <span>Invest in Your Digital Presence.</span>
+                                <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M9 5 5 1 1 5" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-2">
+                            <div class="p-5 border border-b-0 border-gray-700 bg-black-main">
+                                <p class="mb-3 text-white"><b>A Website that Works:</b> My websites are not just visually stunning; they are also optimized for search engines and designed to convert visitors into loyal customers.</p>
+                                <p class="mb-3 text-white"><b>A Foundation for Growth:</b> I build websites that are scalable and adaptable, ensuring that your online presence can grow alongside your business.</p>
+                                <p class="mb-3 text-white"><b>A Return on Your Investment:</b> My services are an investment in your company's future, generating tangible results that will drive your success.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      <div class="left-gredient absolute left-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+
+    </section>
+    {{-- why me section end  --}}
+@endsection
+@section('extraJs')
+    <!-- Calendly link widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <!-- Calendly link widget end -->
 @endsection

@@ -106,4 +106,7 @@
     .project-logo-bg img{
         @apply -rotate-45 z-[2];
     }
+
+    /* services page  */
+
 }

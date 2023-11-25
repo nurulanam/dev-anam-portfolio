@@ -26,7 +26,7 @@ class FrontendController extends Controller
     }
     public function services(): View
     {
-        SEOTools::setTitle('Web Design and Development Services by Dev Anam – Web Design, Development');
+        SEOTools::setTitle('Web Design and Development Services by Dev Anam');
         SEOTools::setDescription('Explore a spectrum of tailored web design and development services offered by Dev Anam. Let\'s drive your business growth together.');
         SEOTools::twitter()->setTitle('@dev_nurul_anam');
         SEOTools::opengraph()->setUrl('https://dev-anam.com');

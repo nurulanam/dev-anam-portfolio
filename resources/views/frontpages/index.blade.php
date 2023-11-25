@@ -237,7 +237,6 @@
     </section>
     <!-- my style section end  -->
 
-
     <!-- sercvices section start  -->
     <section class="services-section min-h-screen flex items-center" id="secvices" data-scroll data-scroll-section>
       <div class="container px-4 py-12">
@@ -247,7 +246,7 @@
               <h2 class="h2 text-white pb-2 md:pb-2">Bringing</h2>
               <h2 class="h2 text-red-main pb-6">Digital Dreams <span class="text-white">to Life</span></h2>
               <p class="services-desctiption text-gray-500 text-lg font-medium lg:pr-[35%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
-              <a href="#" class="btn-red group inline-block">Start a Project <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+              <a href="{{ route('front.services') }}" class="btn-red group inline-block">What I Offer <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
             </div>
           </div>
           <div class="col-span-12 md:col-span-6 md:pt-[45vh] md:pb-[15vh]">
