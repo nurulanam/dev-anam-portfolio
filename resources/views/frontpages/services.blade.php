@@ -48,7 +48,7 @@
     <!-- banner section end -->
 
     {{-- services section start  --}}
-    <section class="services-section min-h-screen flex items-center" id="allPackages" data-scroll data-scroll-section>
+    <section class="services-section min-h-screen flex items-center relative" id="allPackages" data-scroll data-scroll-section>
         <div class="container px-4 py-32 md:py-12">
             <div class="grid grid-cols-12 md:gap-4 items-stretch">
                 <div

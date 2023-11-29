@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use Artesaos\SEOTools\Facades\SEOTools;
 use App\Http\Controllers\FrontendController;
 /*
 |--------------------------------------------------------------------------
@@ -16,8 +15,9 @@ use App\Http\Controllers\FrontendController;
 */
 
 Route::get('/', [FrontendController::class, 'index'])->name('front.index');
-Route::get('/my-portfolio', [FrontendController::class, 'portfolio'])->name('front.portfolio');
+Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('front.portfolio');
 Route::get('/services', [FrontendController::class, 'services'])->name('front.services');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('front.contact');
 
 
 Route::get('/dashboard', function () {

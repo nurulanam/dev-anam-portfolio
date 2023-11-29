@@ -14,7 +14,7 @@
                     <a href="{{ route('front.services') }}" class="nav-list-item group">What I Offer <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
                 </li>
                 <li>
-                    <a href="{{ url('/#') }}" class="nav-list-item group">Get In Touch <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+                    <a href="{{ route('front.contact') }}" class="nav-list-item group">Get In Touch <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
                 </li>
             </ul>
           </div>
