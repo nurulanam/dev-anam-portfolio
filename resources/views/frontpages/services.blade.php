@@ -164,7 +164,6 @@
                         design, development, and SEO, I can craft a website that not only captures attention but also drives
                         results. Let me help you establish a digital presence that truly matters.</p>
                     <button class="btn-red group capitalize" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nurulanam'});return false;">Book a time to talk <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
-
                 </div>
                 <div class="col-span-12 md:col-span-6 items-center">
                     <div id="accordion-color" data-accordion="collapse"

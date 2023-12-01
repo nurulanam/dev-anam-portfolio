@@ -1,8 +1,10 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use Spatie\Honeypot\ProtectAgainstSpam;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\QueryMailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +20,8 @@ Route::get('/', [FrontendController::class, 'index'])->name('front.index');
 Route::get('/portfolio', [FrontendController::class, 'portfolio'])->name('front.portfolio');
 Route::get('/services', [FrontendController::class, 'services'])->name('front.services');
 Route::get('/contact', [FrontendController::class, 'contact'])->name('front.contact');
+
+Route::post('/query-mail', [QueryMailController::class, 'send'])->middleware(ProtectAgainstSpam::class)->name('send.query');
 
 
 Route::get('/dashboard', function () {

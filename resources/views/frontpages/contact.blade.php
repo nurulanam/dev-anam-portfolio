@@ -1,4 +1,7 @@
 @extends('layouts.front')
+@section('extraMeta')
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@endsection
 @section('contents')
     <!-- banner section start -->
     <section
@@ -48,17 +51,18 @@
         <div class="container px-4 py-32 md:py-12">
             <div class="grid grid-cols-12 md:gap-4 items-center">
                 <div class="col-span-12 md:col-span-6 text-white">
-                    <form action="#" class="space-y-6 text-center md:text-start">
+                    <form action="#" method="POST" class="space-y-6 text-center md:text-start" id="queryForm">
+                        @honeypot
                         <div>
                             <input type="text" name="name" class="contact-input placeholder:text-white" placeholder="full name">
                         </div>
                         <div>
-                            <input type="email" name="email" class="contact-input placeholder:text-white" placeholder="e-mail">
+                            <input type="text" name="unique_data" id="uniqueInput" class="contact-input placeholder:text-white" placeholder="Your E mail">
                         </div>
                         <div>
-                            <textarea name="message" rows="5" class="contact-input placeholder:text-white" placeholder="Your Message"></textarea>
+                            <textarea name="message" rows="8" class="contact-input placeholder:text-white" placeholder="Your Message."></textarea>
                         </div>
-                        <button class="btn-red group capitalize">Send Message <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
+                        <button type="button" class="btn-red group capitalize" id="sendMessageBtn">Send Message <span class="ms-2" ><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
                     </form>
                 </div>
                 <div class="col-span-12 md:col-span-6 text-center md:text-end text-white pb-12  md:ps-[15%]">
@@ -73,4 +77,81 @@
     {{-- contact section end  --}}
 
 
+@endsection
+@section('extraJs')
+<script>
+    const emailInput = document.getElementById('uniqueInput');
+    const ipAddress = '';
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+    const timeLimit = 300000;
+    let lastSubmissionTime = localStorage.getItem('lastSubmissionTime') ? parseInt(localStorage.getItem('lastSubmissionTime')) : 0;
+
+    emailInput.addEventListener('keyup', () => {
+        const emailValue = emailInput.value.trim();
+
+        // Regular expression for email validation
+        const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        const errorMessages = document.querySelectorAll('#uniqueInput + span');
+        for (const errorMessage of errorMessages) {
+            errorMessage.parentNode.removeChild(errorMessage);
+        }
+        if (!emailRegex.test(emailValue)) {
+            // Display error message
+            const errorMessage = document.createElement('span');
+            errorMessage.textContent = 'Please enter a valid email address.';
+            errorMessage.style.color = '#f44336';
+
+            emailInput.parentNode.appendChild(errorMessage);
+            sendMessageBtn.disabled = true;
+        } else {
+            // Remove any existing error message
+            const errorMessages = document.querySelectorAll('#uniqueInput + span');
+            for (const errorMessage of errorMessages) {
+                errorMessage.parentNode.removeChild(errorMessage);
+            }
+            sendMessageBtn.disabled = false;
+        }
+    });
+
+    sendMessageBtn.addEventListener('click', () => {
+        const currentTime = Date.now();
+
+        if (currentTime - lastSubmissionTime < timeLimit) {
+            const timeRemaining = Math.floor((timeLimit - (currentTime - lastSubmissionTime)) / 1000);
+            alert(`Please wait ${timeRemaining} seconds to submit another message.`);
+            return;
+        }
+
+        if (!emailInput.value.trim()) {
+            alert('Please enter an email address.');
+            return;
+        }
+
+
+        // Submit form data via AJAX
+        $.ajax({
+            url: "/query-mail",
+            method: "POST",
+            data: $('#queryForm').serialize(),
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // Add CSRF token
+            },
+            success: function(response) {
+                $('#queryForm input[type="text"]').val('');
+                $('#queryForm textarea').val('');
+                alert('Your message has been sent successfully.');
+
+                lastSubmissionTime = currentTime;
+                localStorage.setItem('lastSubmissionTime', lastSubmissionTime);
+            },
+            error: function(error) {
+                // console.error('Error sending message:', error);
+                alert('An error occurred while sending your message. Please try again later.');
+            }
+        });
+    });
+
+</script>
 @endsection

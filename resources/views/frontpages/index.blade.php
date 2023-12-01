@@ -1,4 +1,7 @@
 @extends('layouts.front')
+@section('extraMeta')
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@endsection
 @section('contents')
     <!-- banner section start -->
     <section
@@ -300,17 +303,18 @@
             <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
                 <div class="col-span-12 order-2 md:order-1 md:col-span-6">
                     <h2 class="h2 text-white text-center md:text-start pb-12">Say <span class="text-red-main">Hi</span>!</h2>
-                    <form action="#" class="space-y-6 text-center md:text-start">
+                    <form action="#" method="POST" class="space-y-6 text-center md:text-start" id="queryForm">
+                        @honeypot
                         <div>
                             <input type="text" name="name" class="contact-input" placeholder="full name">
                         </div>
                         <div>
-                            <input type="email" name="email" class="contact-input" placeholder="e-mail">
+                            <input type="text" name="unique_data" id="uniqueInput" class="contact-input" placeholder="Your E mail">
                         </div>
                         <div>
                             <textarea name="message" rows="8" class="contact-input" placeholder="Your input is valuable to me. Whether you have questions, ideas, or simply want to connect, don't hesitate to reach out. I'm here to listen and assist you on your journey."></textarea>
                         </div>
-                        <button class="btn-red group capitalize">Send Message <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
+                        <button type="button" class="btn-red group capitalize" id="sendMessageBtn">Send Message <span class="ms-2" ><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
                     </form>
                 </div>
                 <div class="col-span-12 md:col-span-6 order-1 md:order-2 flex justify-center md:justify-end" data-scroll data-scroll-speed="3">
@@ -331,4 +335,84 @@
     <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 
     <!-- Calendly link widget end -->
+
+
+
+
+<script>
+    const emailInput = document.getElementById('uniqueInput');
+    const ipAddress = '';
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+    const timeLimit = 300000;
+    let lastSubmissionTime = localStorage.getItem('lastSubmissionTime') ? parseInt(localStorage.getItem('lastSubmissionTime')) : 0;
+
+    emailInput.addEventListener('keyup', () => {
+        const emailValue = emailInput.value.trim();
+
+        // Regular expression for email validation
+        const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+        const errorMessages = document.querySelectorAll('#uniqueInput + span');
+        for (const errorMessage of errorMessages) {
+            errorMessage.parentNode.removeChild(errorMessage);
+        }
+        if (!emailRegex.test(emailValue)) {
+            // Display error message
+            const errorMessage = document.createElement('span');
+            errorMessage.textContent = 'Please enter a valid email address.';
+            errorMessage.style.color = '#f44336';
+
+            emailInput.parentNode.appendChild(errorMessage);
+            sendMessageBtn.disabled = true;
+        } else {
+            // Remove any existing error message
+            const errorMessages = document.querySelectorAll('#uniqueInput + span');
+            for (const errorMessage of errorMessages) {
+                errorMessage.parentNode.removeChild(errorMessage);
+            }
+            sendMessageBtn.disabled = false;
+        }
+    });
+
+    sendMessageBtn.addEventListener('click', () => {
+        const currentTime = Date.now();
+
+        if (currentTime - lastSubmissionTime < timeLimit) {
+            const timeRemaining = Math.floor((timeLimit - (currentTime - lastSubmissionTime)) / 1000);
+            alert(`Please wait ${timeRemaining} seconds to submit another message.`);
+            return;
+        }
+
+        if (!emailInput.value.trim()) {
+            alert('Please enter an email address.');
+            return;
+        }
+
+
+        // Submit form data via AJAX
+        $.ajax({
+            url: "/query-mail",
+            method: "POST",
+            data: $('#queryForm').serialize(),
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // Add CSRF token
+            },
+            success: function(response) {
+                $('#queryForm input[type="text"]').val('');
+                $('#queryForm textarea').val('');
+                alert('Your message has been sent successfully.');
+
+                lastSubmissionTime = currentTime;
+                localStorage.setItem('lastSubmissionTime', lastSubmissionTime);
+            },
+            error: function(error) {
+                // console.error('Error sending message:', error);
+                alert('An error occurred while sending your message. Please try again later.');
+            }
+        });
+    });
+
+</script>
+
 @endsection
