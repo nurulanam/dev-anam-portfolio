@@ -337,82 +337,87 @@
     <!-- Calendly link widget end -->
 
 
+    <script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
 
+    <script>
+        const emailInput = document.getElementById('uniqueInput');
+        const ipAddress = '';
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
 
-<script>
-    const emailInput = document.getElementById('uniqueInput');
-    const ipAddress = '';
-    const sendMessageBtn = document.getElementById('sendMessageBtn');
+        const timeLimit = 300000;
+        let lastSubmissionTime = localStorage.getItem('lastSubmissionTime') ? parseInt(localStorage.getItem('lastSubmissionTime')) : 0;
 
-    const timeLimit = 300000;
-    let lastSubmissionTime = localStorage.getItem('lastSubmissionTime') ? parseInt(localStorage.getItem('lastSubmissionTime')) : 0;
+        emailInput.addEventListener('keyup', () => {
+            const emailValue = emailInput.value.trim();
 
-    emailInput.addEventListener('keyup', () => {
-        const emailValue = emailInput.value.trim();
+            // Regular expression for email validation
+            const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        // Regular expression for email validation
-        const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-        const errorMessages = document.querySelectorAll('#uniqueInput + span');
-        for (const errorMessage of errorMessages) {
-            errorMessage.parentNode.removeChild(errorMessage);
-        }
-        if (!emailRegex.test(emailValue)) {
-            // Display error message
-            const errorMessage = document.createElement('span');
-            errorMessage.textContent = 'Please enter a valid email address.';
-            errorMessage.style.color = '#f44336';
-
-            emailInput.parentNode.appendChild(errorMessage);
-            sendMessageBtn.disabled = true;
-        } else {
-            // Remove any existing error message
             const errorMessages = document.querySelectorAll('#uniqueInput + span');
             for (const errorMessage of errorMessages) {
                 errorMessage.parentNode.removeChild(errorMessage);
             }
-            sendMessageBtn.disabled = false;
-        }
-    });
+            if (!emailRegex.test(emailValue)) {
+                // Display error message
+                const errorMessage = document.createElement('span');
+                errorMessage.textContent = 'Please enter a valid email address.';
+                errorMessage.style.color = '#f44336';
 
-    sendMessageBtn.addEventListener('click', () => {
-        const currentTime = Date.now();
-
-        if (currentTime - lastSubmissionTime < timeLimit) {
-            const timeRemaining = Math.floor((timeLimit - (currentTime - lastSubmissionTime)) / 1000);
-            alert(`Please wait ${timeRemaining} seconds to submit another message.`);
-            return;
-        }
-
-        if (!emailInput.value.trim()) {
-            alert('Please enter an email address.');
-            return;
-        }
-
-
-        // Submit form data via AJAX
-        $.ajax({
-            url: "/query-mail",
-            method: "POST",
-            data: $('#queryForm').serialize(),
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // Add CSRF token
-            },
-            success: function(response) {
-                $('#queryForm input[type="text"]').val('');
-                $('#queryForm textarea').val('');
-                alert('Your message has been sent successfully.');
-
-                lastSubmissionTime = currentTime;
-                localStorage.setItem('lastSubmissionTime', lastSubmissionTime);
-            },
-            error: function(error) {
-                // console.error('Error sending message:', error);
-                alert('An error occurred while sending your message. Please try again later.');
+                emailInput.parentNode.appendChild(errorMessage);
+                sendMessageBtn.disabled = true;
+            } else {
+                // Remove any existing error message
+                const errorMessages = document.querySelectorAll('#uniqueInput + span');
+                for (const errorMessage of errorMessages) {
+                    errorMessage.parentNode.removeChild(errorMessage);
+                }
+                sendMessageBtn.disabled = false;
             }
         });
-    });
 
-</script>
+        sendMessageBtn.addEventListener('click', () => {
+            sendMessageBtn.disabled = true;
 
+            const currentTime = Date.now();
+
+            if (currentTime - lastSubmissionTime < timeLimit) {
+                const timeRemaining = Math.floor((timeLimit - (currentTime - lastSubmissionTime)) / 1000);
+                alert(`Please wait ${timeRemaining} seconds to submit another message.`);
+                sendMessageBtn.disabled = false;
+                return;
+            }
+
+            if (!emailInput.value.trim()) {
+                alert('Please enter an email address.');
+                sendMessageBtn.disabled = false;
+                return;
+            }
+
+
+            // Submit form data via AJAX
+            $.ajax({
+                url: "/query-mail",
+                method: "POST",
+                data: $('#queryForm').serialize(),
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') // Add CSRF token
+                },
+                success: function(response) {
+                    $('#queryForm input[type="text"]').val('');
+                    $('#queryForm textarea').val('');
+                    alert('Your message has been sent successfully.');
+
+                    lastSubmissionTime = currentTime;
+                    localStorage.setItem('lastSubmissionTime', lastSubmissionTime);
+                    sendMessageBtn.disabled = false;
+                },
+                error: function(error) {
+                    sendMessageBtn.disabled = false;
+                    // console.error('Error sending message:', error);
+                    alert('An error occurred while sending your message. Please try again later.');
+                }
+            });
+        });
+
+    </script>
 @endsection

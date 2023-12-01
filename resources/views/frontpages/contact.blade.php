@@ -79,6 +79,7 @@
 
 @endsection
 @section('extraJs')
+<script src="{{ asset('js/jquery-3.6.4.min.js') }}"></script>
 <script>
     const emailInput = document.getElementById('uniqueInput');
     const ipAddress = '';
@@ -116,16 +117,20 @@
     });
 
     sendMessageBtn.addEventListener('click', () => {
+        sendMessageBtn.disabled = true;
+
         const currentTime = Date.now();
 
         if (currentTime - lastSubmissionTime < timeLimit) {
             const timeRemaining = Math.floor((timeLimit - (currentTime - lastSubmissionTime)) / 1000);
             alert(`Please wait ${timeRemaining} seconds to submit another message.`);
+            sendMessageBtn.disabled = false;
             return;
         }
 
         if (!emailInput.value.trim()) {
             alert('Please enter an email address.');
+            sendMessageBtn.disabled = false;
             return;
         }
 
@@ -145,8 +150,10 @@
 
                 lastSubmissionTime = currentTime;
                 localStorage.setItem('lastSubmissionTime', lastSubmissionTime);
+                sendMessageBtn.disabled = false;
             },
             error: function(error) {
+                sendMessageBtn.disabled = false;
                 // console.error('Error sending message:', error);
                 alert('An error occurred while sending your message. Please try again later.');
             }

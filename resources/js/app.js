@@ -4,8 +4,6 @@ import '../css/app.css';
 import '../css/all.css';
 import '../css/locomotive-scroll.min.css';
 
-import './jquery-3.6.4.min.js';
-
 import Alpine from 'alpinejs';
 import LocomotiveScroll from 'locomotive-scroll';
 import gsap from "gsap";
