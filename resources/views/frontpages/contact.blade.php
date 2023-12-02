@@ -26,8 +26,8 @@
                 <div class="col-span-12 order-1 md:col-span-6 md:order-2 flex justify-center md:justify-end" data-scroll
                     data-scroll-speed="3">
                     <div class="relative w-fit h-fit">
-                        <img src="{{ asset('/img/service-hero.svg') }}" class="banner-avater opacity-0" alt="my portfolio">
-                        <img class="absolute brand opacity-0 -bottom-12 -right-10" src="{{ asset('/img/brand.png') }}"
+                        <img src="{{ asset('/img/contact-banner-img.webp') }}" class="banner-avater opacity-0" alt="my portfolio">
+                        <img class="absolute brand opacity-0 -bottom-6 -left-10" src="{{ asset('/img/brand.png') }}"
                             alt="brand">
                     </div>
                 </div>
