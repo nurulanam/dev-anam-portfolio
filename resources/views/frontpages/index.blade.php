@@ -99,6 +99,87 @@
     </section>
     <!-- about me section end  -->
 
+    <!-- about me section start -->
+    <section class="min-h-screen flex items-center bg-black-main relative" id="newAboutMe" data-scroll data-scroll-section>
+        <div class="container py-12  px-4">
+          <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
+            <div class="col-span-12 md:col-span-6">
+                <div class="grid grid-cols-12 gap-7">
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">Laravel</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/wordpress.png') }}" alt="wordpress.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">WordPress</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">Laravel</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">Laravel</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">Laravel</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center">
+                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                        </div>
+                        <p class="text-white text-lg font-bold">Laravel</p>
+                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-6 text-center md:text-end text-white">
+              <h2 class="h2 pb-12">About <span class="text-red-main">Me</span></h2>
+              <div class="about-me-details text-lg font-medium text-gray-500 space-y-6 pb-12  md:ps-[15%]">
+                  <p>Renowned for crafting clean, modern, eye-catching designs paired with highly adaptable code, I'm committed to perpetual learning, staying ahead of trends, and ensuring impeccable functionality and responsiveness.</p>
+                  <p>I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design.</p>
+              </div>
+              <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
+                <img src="{{ asset('/img/html.png') }}" alt="html">
+                <img src="{{ asset('/img/css.png') }}" alt="css">
+                <img src="{{ asset('/img/js.png') }}" alt="js">
+                <img src="{{ asset('/img/bootstrap.png') }}" alt="bootstrap css">
+                <img src="{{ asset('/img/tailwind.png') }}" alt="tailwind css">
+                <img src="{{ asset('/img/php.png') }}" alt="php">
+                <img src="{{ asset('/img/laravel.png') }}" alt="laravel">
+                <img src="{{ asset('/img/wordpress.png') }}" alt="wordpress">
+                <img src="{{ asset('/img/github.png') }}" alt="github">
+              </div>
+              <a href="#recentProjectsSection" class="btn-red group" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="left-gredient absolute left-0 top-0 min-w-[30vw] lg:min-w-[20vw] min-h-full bg-gradient-to-b from-red-main via-red-main/40 to-transparent -z-[1]"></div>
+      </section>
+      <!-- about me section end  -->
+
     <!-- recent projects section start  -->
     <section class="recent-projects min-h-screen py-12 md:py-12 flex items-center bg-black-main relative" id="recentProjectsSection" data-scroll data-scroll-section>
       <div class="container px-4">
@@ -289,6 +370,11 @@
             <p class="max-w-2xl text-white text-lg text-center pb-12 font-medium mx-auto">Experience the power of 'Impactful Case in Motion' as it encapsulates a singular, remarkable success story in a visual narrative that leaves a lasting impression.</p>
             <div class="case-study-video text-center">
                 <iframe class="max-w-4xl max-h-[50vh] h-72 md:min-h-[450px] w-full mx-auto rounded-3xl border-8 border-gray-900 shadow-lg shadow-red-900" src="https://www.youtube.com/embed/iqdTawJQN8w?si=3Jz7Mh58l81oAoZj?rel=0&controls=0&disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  data-scroll data-scroll-speed="2"></iframe>
+                <div class="max-w-4xl max-h-[50vh] h-72 md:min-h-[450px] w-full mx-auto rounded-3xl border-8 border-gray-900 shadow-lg shadow-red-900">
+                    <a href="#" target="_blank">
+                        <img src="{{ asset('asset/img') }}" alt="">
+                    </a>
+                </div>
             </div>
             <div class="pt-12 text-center">
                 <button class="btn-red group capitalize" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nurulanam'});return false;">Book a time to talk <span class="ms-2"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></button>
