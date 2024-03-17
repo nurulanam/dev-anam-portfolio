@@ -105,63 +105,43 @@
           <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
             <div class="col-span-12 md:col-span-6">
                 <div class="grid grid-cols-12 gap-7">
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
+                            <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
                         </div>
                         <p class="text-white text-lg font-bold">Laravel</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                        <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
                     </div>
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/wordpress.png') }}" alt="wordpress.png">
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
+                            <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/wordpress.png') }}" alt="wordpress.png">
                         </div>
                         <p class="text-white text-lg font-bold">WordPress</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                        <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
                     </div>
-
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
+                            <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/html.png') }}" alt="laravel.png">
                         </div>
                         <p class="text-white text-lg font-bold">Laravel</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                        <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
                     </div>
-
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
+                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
+                        <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
+                            <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/tailwind.png') }}" alt="wordpress.png">
                         </div>
-                        <p class="text-white text-lg font-bold">Laravel</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
+                        <p class="text-white text-lg font-bold">WordPress</p>
+                        <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
                     </div>
-
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
-                        </div>
-                        <p class="text-white text-lg font-bold">Laravel</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
-                    </div>
-
-                    <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center text-center space-y-4 rounded-xl py-5 px-3">
-                        <div class="flex justify-center">
-                            <img class="group-hover:scale-125 transition-all ease-linear" src="{{ asset('/img/laravel.png') }}" alt="laravel.png">
-                        </div>
-                        <p class="text-white text-lg font-bold">Laravel</p>
-                        <div class="bg-neutral-900 transition-all ease-linear group-hover:bg-red-main rounded-xl p-3 text-white text-center text-base font-bold">95%</div>
-                    </div>
-
-
                 </div>
             </div>
             <div class="col-span-12 md:col-span-6 text-center md:text-end text-white">
               <h2 class="h2 pb-12">About <span class="text-red-main">Me</span></h2>
-              <div class="about-me-details text-lg font-medium text-gray-500 space-y-6 pb-12  md:ps-[15%]">
+              <div class="about-me-details text-lg font-medium text-gray-500 space-y-6 pb-12  md:ps-[25%]">
                   <p>Renowned for crafting clean, modern, eye-catching designs paired with highly adaptable code, I'm committed to perpetual learning, staying ahead of trends, and ensuring impeccable functionality and responsiveness.</p>
                   <p>I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design.</p>
               </div>
-              <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
+               {{-- <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
                 <img src="{{ asset('/img/html.png') }}" alt="html">
                 <img src="{{ asset('/img/css.png') }}" alt="css">
                 <img src="{{ asset('/img/js.png') }}" alt="js">
@@ -171,7 +151,7 @@
                 <img src="{{ asset('/img/laravel.png') }}" alt="laravel">
                 <img src="{{ asset('/img/wordpress.png') }}" alt="wordpress">
                 <img src="{{ asset('/img/github.png') }}" alt="github">
-              </div>
+              </div>  --}}
               <a href="#recentProjectsSection" class="btn-red group" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
             </div>
           </div>
