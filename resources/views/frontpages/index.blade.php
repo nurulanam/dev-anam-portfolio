@@ -5,9 +5,8 @@
 @section('contents')
     <!-- banner section start -->
     <section
-      class="banner min-h-screen flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.webp')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
-      data-scroll data-scroll-section>
-      <div class="container px-4 py-32 md:py-12">
+      class="banner min-h-screen flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.webp')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:h-full after:w-full">
+      <div class="container px-4 py-32 md:py-12 z-[1]">
         <div class="grid grid-cols-12 gap-y-4 md:gap-y-0 md:gap-x-4 items-center">
           <div class="col-span-12 order-2 md:col-span-6 md:order-1">
             <ul class="hashtags flex items-center justify-center md:justify-start gap-2 mb-4">
@@ -132,17 +131,6 @@
                   <p>Renowned for crafting clean, modern, eye-catching designs paired with highly adaptable code, I'm committed to perpetual learning, staying ahead of trends, and ensuring impeccable functionality and responsiveness.</p>
                   <p>I possess expertise in a range of technologies, including Laravel, PHP, JavaScript, jQuery, Tailwind CSS, and Bootstrap. This diverse skill set enables me to excel in various aspects of web development and design.</p>
               </div>
-               {{-- <div class="skill-images flex justify-center flex-wrap md:justify-end items-center gap-4 pb-12">
-                <img src="{{ asset('/img/html.png') }}" alt="html">
-                <img src="{{ asset('/img/css.png') }}" alt="css">
-                <img src="{{ asset('/img/js.png') }}" alt="js">
-                <img src="{{ asset('/img/bootstrap.png') }}" alt="bootstrap css">
-                <img src="{{ asset('/img/tailwind.png') }}" alt="tailwind css">
-                <img src="{{ asset('/img/php.png') }}" alt="php">
-                <img src="{{ asset('/img/laravel.png') }}" alt="laravel">
-                <img src="{{ asset('/img/wordpress.png') }}" alt="wordpress">
-                <img src="{{ asset('/img/github.png') }}" alt="github">
-              </div>  --}}
               <a href="#recentProjectsSection" class="btn-red group" data-scroll-to>Recent Projects <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
             </div>
           </div>
@@ -297,10 +285,10 @@
       <div class="container px-4 py-12">
         <div class="grid grid-cols-12 gap-6 lg:gap-0">
           <div class="col-span-12 md:col-span-6">
-            <div class="md:pt-[20vh] md:pb-[30vh] text-center md:text-start" data-scroll data-scroll-sticky data-scroll-target="#secvices">
+            <div class="md:pt-[20vh] md:pb-[30vh] text-center md:text-start sticky top-[5%]" data-scroll data-scroll-sticky data-scroll-target="#secvices">
               <h2 class="h2 text-white pb-2 md:pb-2">Bringing</h2>
               <h2 class="h2 text-red-main pb-6">Digital Dreams <span class="text-white">to Life</span></h2>
-              <p class="services-desctiption text-gray-500 text-lg font-medium lg:pr-[35%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
+              <p class="services-desctiption text-gray-500 text-lg font-medium lg:pr-[30%] pb-12">I'm dedicated to crafting exceptional web solutions that not only meet your needs but also exceed your expectations. Whether it's creating stunning websites, optimizing user experiences, or developing robust web applications, I take pride in delivering results that bring smiles and satisfaction to my clients. Together, let's embark on a journey to elevate your online presence and make your digital visions come to life.</p>
               <a href="{{ route('front.services') }}" class="btn-red group inline-block">What I Offer <span class="ms-1"><i class="fa-solid fa-arrow-up-right transition-all ease-linear group-hover:rotate-45"></i></span></a>
             </div>
           </div>
@@ -335,8 +323,8 @@
     <!-- sercvices section end  -->
 
     <!-- case study section start  -->
-    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('/img/grid.webp')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[3] after:h-full after:w-full" data-scroll data-scroll-section>
-        <div class="container px-4 py-12 ">
+    <section class="case-study-section min-h-screen flex items-center bg-gradient-to-b from-red-main via-red-main/70 to-black-main mx-0 md:mx-[15%] lg:mx-[30%] relative after:bg-[url('/img/grid.webp')] after:opacity-40 after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:h-full after:w-full">
+        <div class="container px-4 py-12 z-[1]">
             <h2 class="h2 text-white text-center pb-6">A Journey of <span class="text-black-main">Digital Impact</span></h2>
             <p class="max-w-2xl text-white text-lg text-center pb-12 font-medium mx-auto">Experience the power of 'Impactful Case in Motion' as it encapsulates a singular, remarkable success story in a visual narrative that leaves a lasting impression.</p>
             <div class="case-study-video text-center">

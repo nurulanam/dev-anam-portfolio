@@ -14,7 +14,8 @@ export default {
         extend: {
             colors: {
                 red: {
-                  main: '#F44336',
+                //   main: '#F44336',
+                  main: '#078efb',
                 },
                 gray: {
                   main: '#414141',

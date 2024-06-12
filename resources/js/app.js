@@ -2,10 +2,10 @@ import './bootstrap';
 
 import '../css/app.css';
 import '../css/all.css';
-import '../css/locomotive-scroll.min.css';
+// import '../css/locomotive-scroll.min.css';
 
 import Alpine from 'alpinejs';
-import LocomotiveScroll from 'locomotive-scroll';
+// import LocomotiveScroll from 'locomotive-scroll';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import 'flowbite';
@@ -17,21 +17,23 @@ Alpine.start();
 
 
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, scroll);
 
-// Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
-const stickyElements = document.querySelectorAll('[data-scroll-sticky][data-scroll-target]');
 
-// Check if it's a smartphone (you may need to adjust this condition)
-if (window.innerWidth < 768) {
-  // Loop through the elements and clear the data-scroll-target attribute
-  stickyElements.forEach(element => {
-    element.removeAttribute('data-scroll-target');
-  });
-}
+// // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
 
-const servicesDescription = document.querySelector('.services-desctiption'); // Correct the class name
+// const stickyElements = document.querySelectorAll('[data-scroll-sticky][data-scroll-target]');
+
+// // Check if it's a smartphone (you may need to adjust this condition)
+// if (window.innerWidth < 768) {
+//   // Loop through the elements and clear the data-scroll-target attribute
+//   stickyElements.forEach(element => {
+//     element.removeAttribute('data-scroll-target');
+//   });
+// }
+
+const servicesDescription = document.querySelector('.services-desctiption');
 
 if (servicesDescription) {
   const text = servicesDescription.textContent;
@@ -56,39 +58,39 @@ if (testimonialTextElements) {
 
 
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("main"),
-  smooth: true,
-  smartphone: {
-    smooth: true,
-    "data-scroll-sticky": false
-  },
-  tablet: {
-      smooth: true
-  },
-  multiplier: 1.2,
-});
-// each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
-locoScroll.on("scroll", ScrollTrigger.update);
+// const locoScroll = new LocomotiveScroll({
+//   el: document.querySelector("main"),
+//   smooth: true,
+//   smartphone: {
+//     smooth: true,
+//     "data-scroll-sticky": false
+//   },
+//   tablet: {
+//       smooth: true
+//   },
+//   multiplier: 1.2,
+// });
+// // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
+// locoScroll.on("scroll", ScrollTrigger.update);
 
-// tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
-ScrollTrigger.scrollerProxy("main", {
-  scrollTop(value) {
-    return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
-  }, // we don't have to define a scrollLeft because we're only scrolling vertically.
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
-  },
-  // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
-  pinType: document.querySelector("main").style.transform ? "transform" : "fixed"
-});
+// // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
+// ScrollTrigger.scrollerProxy("main", {
+//   scrollTop(value) {
+//     return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+//   }, // we don't have to define a scrollLeft because we're only scrolling vertically.
+//   getBoundingClientRect() {
+//     return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
+//   },
+//   // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
+//   pinType: document.querySelector("main").style.transform ? "transform" : "fixed"
+// });
 
 
-// each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
-ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+// // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll.
+// ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
-// after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
-ScrollTrigger.refresh();
+// // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
+// ScrollTrigger.refresh();
 
 
 
@@ -117,7 +119,6 @@ window.addEventListener('resize', function () {
     }
 });
 });
-
 
 
 
@@ -180,35 +181,36 @@ timeline3.to('.banner-social-list li',{
   stagger: 0.25,
 })
 
-gsap.to('.about-me-img',{
-  opacity: 1,
-  scrollTrigger:{
-    trigger: '.about-me-img',
-    scroller: 'main',
-    start: 'top 60%',
-    end: '+=10%',
-    scrub: 2,
-}
-})
+// gsap.to('.about-me-img',{
+//   opacity: 1,
+//   scrollTrigger:{
+//     trigger: '.about-me-img',
+//     scroller: 'main',
+//     start: 'top 60%',
+//     end: '+=10%',
+//     scrub: 2,
+// }
+// })
 
 gsap.to('.about-me-details p span', {
     color: 'white',
     stagger: 1,
     scrollTrigger:{
         trigger: '.about-me-details p span',
-        scroller: 'main',
+        // scroller: 'main',
         start: 'top 70%',
         end: '+=20%',
         scrub: 2,
+        markers: true
     }
-})
+}) 
 
 gsap.to('.services-desctiption span', {
     color: 'white',
     stagger: 1,
     scrollTrigger:{
         trigger: '.services-desctiption span',
-        scroller: 'main',
+        // scroller: 'main',
         start: 'top 70%',
         end: '+=20%',
         scrub: 2,
@@ -221,10 +223,11 @@ gsap.to('.case-study-section', {
     stagger: 1,
     scrollTrigger: {
       trigger: '.case-study-section',
-      scroller: 'main',
-      start: 'top 65%',
-      end: '+=10%',
+      // scroller: 'main',
+      start: 'top 40%',
+      end: '+=20%',
       scrub: 2,
+      markers: true
     }
   });
 
@@ -236,7 +239,7 @@ gsap.to('.case-study-section', {
       opacity: 0,
       scrollTrigger: {
         trigger: projectItem,
-        scroller: 'main',
+        // scroller: 'main',
         start: 'top 80%',
         end: '+=10%',
         scrub: 2,
@@ -356,7 +359,7 @@ function horizontalLoop(items, config) {
     opacity: 1,
     scrollTrigger: {
       trigger: '.contact-section .contact-img',
-      scroller: 'main',
+      // scroller: 'main',
       start: 'top 60%',
       end: '+=10%',
       scrub: 2,
@@ -407,7 +410,7 @@ function horizontalLoop(items, config) {
                 stagger: 1,
                 scrollTrigger: {
                 trigger: testimonialTextSpans, // Use the span as the trigger
-                scroller: 'main',
+                // scroller: 'main',
                 start: 'top 75%',
                 end: '+=10%',
                 scrub: 2,
