@@ -51,10 +51,10 @@
           </div>
         </div>
       </div>
-      <div class="circle-php absolute top-20 right-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0" >
+      <div class="circle-php absolute top-20 right-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0 z-[1]" >
         <p class="leading-[48px] text-xs font-bold">PHP</p>
       </div>
-      <div class="circle-laravel absolute hidden md:inline-block bottom-20 left-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0">
+      <div class="circle-laravel absolute hidden md:inline-block bottom-20 left-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0 z-[1]">
         <p class="leading-[48px] text-xs font-bold">Laravel</p>
       </div>
       <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black-main via-black-main/25 to-transparent min-h-[250px] -z-[1]"></div>
@@ -94,14 +94,14 @@
                         </div>
                         <p class="text-white text-lg font-bold">Javascript</p>
                         <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
-                    </div>   
+                    </div>
                     <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
                         <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
                             <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/tailwind.png') }}" alt="laravel.png">
                         </div>
                         <p class="text-white text-lg font-bold">Tailwind</p>
                         <div class="bg-neutral-900 w-full transition-all ease-linear group-hover:bg-red-main rounded-xl px-3 py-[10px] text-white text-center text-base font-bold">95%</div>
-                    </div>           
+                    </div>
                     <div class="col-span-6 md:col-span-3 bg-neutral-800 ring-2 ring-neutral-700 transition-all ease-linear hover:ring-red-main group flex flex-col justify-center items-center text-center space-y-4 rounded-xl py-5 px-3">
                         <div class="flex justify-center w-16 h-16 rounded-full text-center bg-neutral-900 p-3">
                             <img class="group-hover:scale-110 transition-all ease-linear object-contain" src="{{ asset('/img/bootstrap.png') }}" alt="laravel.png">
@@ -329,7 +329,7 @@
             <p class="max-w-2xl text-white text-lg text-center pb-12 font-medium mx-auto">Experience the power of 'Impactful Case in Motion' as it encapsulates a singular, remarkable success story in a visual narrative that leaves a lasting impression.</p>
             <div class="case-study-video text-center">
                 <!-- <iframe class="max-w-4xl max-h-[50vh] h-72 md:min-h-[450px] w-full mx-auto rounded-3xl border-8 border-gray-900 shadow-lg shadow-red-900" src="https://www.youtube.com/embed/iqdTawJQN8w?si=3Jz7Mh58l81oAoZj?rel=0&controls=0&disablekb=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  data-scroll data-scroll-speed="2"></iframe> -->
-                
+
                     <a href="#" target="_blank">
                         <img src="{{ asset('img/ProjectWorkflow.jpg') }}" alt="" class="max-w-4xl max-h-[50vh]  h-72 md:min-h-[450px] w-full mx-auto rounded-3xl border-8 border-gray-900 shadow-lg shadow-red-900 cover">
                     </a>

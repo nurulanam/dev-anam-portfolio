@@ -5,9 +5,8 @@
 @section('contents')
     <!-- banner section start -->
     <section
-        class="banner min-h-screen flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:-z-[1] after:h-full after:w-full"
-        data-scroll data-scroll-section>
-        <div class="container px-4 py-32 md:py-12">
+        class="banner min-h-screen flex items-center bg-gradient-to-tl from-black-main from-15%  via-[#222121] via-40%  to-gray-main to-80% bg-no-repeat bg-cover relative after:bg-[url('/img/grid.png')] after:bg-contain after:bg-repeat after:absolute after:left-0 after:top-0 after:bottom-0 after:right-0 after:h-full after:w-full">
+        <div class="container px-4 py-32 md:py-12 z-[1]">
             <div class="grid grid-cols-12 gap-y-10 md:gap-y-0 md:gap-x-4 items-center">
                 <div class="col-span-12 order-2 md:col-span-6 md:order-1">
                     <div class="banner-h text-center md:text-start">
@@ -34,11 +33,11 @@
             </div>
         </div>
         <div
-            class="circle-php absolute top-20 right-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0">
+            class="circle-php absolute top-20 right-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0 z-[1]">
             <p class="leading-[48px] text-xs font-bold">PHP</p>
         </div>
         <div
-            class="circle-laravel absolute hidden md:inline-block bottom-20 left-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0">
+            class="circle-laravel absolute hidden md:inline-block bottom-20 left-20 bg-gradient-to-b from-red-main shadow-2xl shadow-red-main text-center h-12 w-12 rounded-full opacity-0 z-[1]">
             <p class="leading-[48px] text-xs font-bold">Laravel</p>
         </div>
         <div

@@ -16,13 +16,10 @@
 
 <body class="overflow-x-hidden bg-dark-main">
     <!-- main container start  -->
+    @include('includes.nav')
     <main>
-        @include('includes.nav')
-
         @yield('contents')
-
         @include('includes.footer')
-
     </main>
     @yield('extraJs')
 </body>
