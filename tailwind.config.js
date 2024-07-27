@@ -15,7 +15,9 @@ export default {
             colors: {
                 red: {
                 //   main: '#F44336',
-                  main: '#078efb',
+                //   main: '#078efb',
+                  main: '#007BFF',
+                //   main: '#1E90FF',
                 },
                 gray: {
                   main: '#414141',
